@@ -144,3 +144,18 @@ body {
     height: 100%;
     
 }
+.zone{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5%;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+
+}
+.compass img{
+    width: 150px;
+    height: 150px;
+    margin-left: 14%;
+    
+}
