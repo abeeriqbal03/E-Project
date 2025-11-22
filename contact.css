@@ -139,3 +139,545 @@ body {
     color: white;
     padding-left: 25px;
 }
+
+
+/* Existing styles from your original CSS go here (header, navbar, footer, etc.) */
+
+/* Contact Form Styles - Creative Design with white, maroon, and brown */
+.contact-form-section {
+    padding: 60px 40px;
+    background: linear-gradient(135deg, white 0%, #f5f5f5 100%); /* Subtle white gradient for creativity */
+    margin: 40px 0;
+    border-top: 4px solid brown;
+    border-bottom: 4px solid brown;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(139, 69, 19, 0.1) 0%, transparent 70%); /* Brown radial overlay for depth */
+    pointer-events: none;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, white 0%, #fafafa 100%); /* Light gradient for container */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.8); /* Creative shadow with inset */
+    border: 3px solid brown;
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 0.8s ease-out; /* Creative entrance animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    font-size: 40px;
+    color: brown;
+    margin-bottom: 10px;
+    animation: bounceIn 1s ease-out; /* Creative icon animation */
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.contact-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: brown;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, brown 0%, maroon 100%); /* Gradient underline */
+    border-radius: 2px;
+    animation: slideIn 1s ease-out 0.5s both; /* Creative underline animation */
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80px;
+    }
+}
+
+.contact-desc {
+    text-align: center;
+    color: brown;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: brown;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-group label i {
+    color: maroon;
+    transition: color 0.3s ease;
+}
+
+.form-group:hover label i {
+    color: brown; /* Creative hover effect on icons */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 15px 20px;
+    border: 2px solid brown;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+    background-color: white;
+    position: relative;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: maroon;
+    background-color: white;
+    outline: none;
+    box-shadow: 0 0 15px rgba(128, 0, 0, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Creative glow and inset shadow */
+    transform: translateY(-2px); /* Subtle lift on focus */
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.phone-group .phone-input-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-group select {
+    flex: 0 0 150px; /* Fixed width for country code */
+    padding: 15px;
+}
+
+.phone-group input {
+    flex: 1; /* Phone input takes remaining space */
+}
+
+.submit-btn {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, brown 0%, maroon 100%); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.submit-btn:hover::before {
+    left: 100%; /* Creative shine effect on hover */
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, maroon 0%, brown 100%);
+    transform: scale(1.05) rotate(1deg); /* Creative scale and rotate */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    position: relative;
+    background: brown;
+    color: white;
+    margin-top: 80px;
+    overflow: hidden;
+    border-top: 8px solid maroon;
+    
+}
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.footer-col {
+    opacity: 1;
+}
+.footer-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.footer-desc {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border: 2px solid maroon;
+    
+}
+
+.social-icon:hover {
+    background: white;
+    color: brown;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+}
+
+.footer-links a i {
+    font-size: 12px;
+    
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 8px;
+}
+
+.footer-links a:hover i {
+    color: white;
+    transform: translateX(5px);
+}
+.footer-contact {
+    list-style: none;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.footer-contact li:hover {
+    background: maroon;
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    font-size: 24px;
+    color: white;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-info strong {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: beige;
+    text-decoration: underline;
+}
+
+.contact-info span {
+    color: white;
+    font-size: 15px;
+}
+.footer-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: white;
+    color: brown;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+.footer-newsletter {
+    background: maroon;
+    padding: 40px;
+    margin: 40px 40px 0;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+}
+
+.newsletter-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.newsletter-content {
+    flex: 1;
+    min-width: 250px;
+}
+
+.newsletter-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-desc {
+    color: white;
+    font-size: 14px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background: brown;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.newsletter-input::placeholder {
+    color: white;
+}
+
+.newsletter-btn {
+    padding: 15px 35px;
+    background: white;
+    color: brown;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+.footer-bottom {
+    background: maroon;
+    padding: 25px 40px;
+    margin-top: 40px;
+    border-top: 1px solid white;
+}
+
+.footer-bottom-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: white;
+    text-decoration: underline;
+    transform: translateX(3px);
+}
