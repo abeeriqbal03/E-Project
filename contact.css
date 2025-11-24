@@ -17,6 +17,7 @@ body {
     border-bottom: 1px solid beige;
     background-color: white;
     position: relative;
+    z-index: 100;
 }
 
 .info {
@@ -57,6 +58,8 @@ body {
     background-color: white;
     padding: 12px 0;
     border-top: 4px solid brown;
+    position: relative;
+    z-index: 100;
 }
 
 .navlinks {
@@ -116,6 +119,8 @@ body {
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .dropdown:hover .dropdown-menu {
@@ -141,17 +146,15 @@ body {
 }
 
 
-/* Existing styles from your original CSS go here (header, navbar, footer, etc.) */
-
-/* Contact Form Styles - Creative Design with white, maroon, and brown */
 .contact-form-section {
     padding: 60px 40px;
-    background: linear-gradient(135deg, white 0%, #f5f5f5 100%); /* Subtle white gradient for creativity */
+    background: white;
     margin: 40px 0;
     border-top: 4px solid brown;
     border-bottom: 4px solid brown;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .contact-form-section::before {
@@ -161,21 +164,18 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(139, 69, 19, 0.1) 0%, transparent 70%); /* Brown radial overlay for depth */
-    pointer-events: none;
 }
 
 .contact-container {
     max-width: 800px;
     margin: 0 auto;
-    background: linear-gradient(145deg, white 0%, #fafafa 100%); /* Light gradient for container */
+    background: white; 
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.8); /* Creative shadow with inset */
     border: 3px solid brown;
     position: relative;
     z-index: 1;
-    animation: fadeInUp 0.8s ease-out; /* Creative entrance animation */
+    animation: fadeInUp 0.8s ease-out;
 }
 
 @keyframes fadeInUp {
@@ -198,7 +198,7 @@ body {
     font-size: 40px;
     color: brown;
     margin-bottom: 10px;
-    animation: bounceIn 1s ease-out; /* Creative icon animation */
+    animation: bounceIn 1s ease-out; 
 }
 
 @keyframes bounceIn {
@@ -236,9 +236,9 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, brown 0%, maroon 100%); /* Gradient underline */
+    background: maroon;
     border-radius: 2px;
-    animation: slideIn 1s ease-out 0.5s both; /* Creative underline animation */
+    animation: slideIn 1s ease-out 0.5s both;
 }
 
 @keyframes slideIn {
@@ -288,7 +288,7 @@ body {
 }
 
 .form-group:hover label i {
-    color: brown; /* Creative hover effect on icons */
+    color: brown;
 }
 
 .form-group input,
@@ -310,8 +310,7 @@ body {
     border-color: maroon;
     background-color: white;
     outline: none;
-    box-shadow: 0 0 15px rgba(128, 0, 0, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Creative glow and inset shadow */
-    transform: translateY(-2px); /* Subtle lift on focus */
+    transform: translateY(-2px); 
 }
 
 .form-group textarea {
@@ -325,17 +324,17 @@ body {
 }
 
 .phone-group select {
-    flex: 0 0 150px; /* Fixed width for country code */
+    flex: 0 0 150px;
     padding: 15px;
 }
 
 .phone-group input {
-    flex: 1; /* Phone input takes remaining space */
+    flex: 1; 
 }
 
 .submit-btn {
     padding: 15px 30px;
-    background: linear-gradient(135deg, brown 0%, maroon 100%); /* Gradient button */
+    background: brown;
     color: white;
     border: none;
     border-radius: 50px;
@@ -359,17 +358,17 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    
     transition: left 0.5s ease;
 }
 
 .submit-btn:hover::before {
-    left: 100%; /* Creative shine effect on hover */
+    left: 100%; 
 }
 
 .submit-btn:hover {
-    background: linear-gradient(135deg, maroon 0%, brown 100%);
-    transform: scale(1.05) rotate(1deg); /* Creative scale and rotate */
+    background: maroon;
+    transform: scale(1.05) rotate(1deg);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 

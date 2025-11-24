@@ -48,12 +48,145 @@
     </nav>
 
 
-    
+    <!-- Feedback Hero Section -->
+    <section class="feedback-hero">
+        <h1><i class="bi bi-chat-heart-fill"></i> Share Your Feedback</h1>
+        <p>We value your opinion! Help us improve your beach experience.</p>
+    </section>
 
+    <!-- Feedback Form -->
+    <div class="feedback-container">
+        <div class="feedback-card">
+            <div class="success-message" id="successMessage">
+                <i class="bi bi-check-circle-fill"></i> Thank you for your feedback! We appreciate your time.
+            </div>
 
+            <form id="feedbackForm" onsubmit="return submitForm()">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName"><i class="bi bi-person-fill"></i> First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+                    </div>
 
+                    <div class="form-group">
+                        <label for="lastName"><i class="bi bi-person-fill"></i> Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+                    </div>
+                </div>
 
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email"><i class="bi bi-envelope-fill"></i> Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
 
+                    <div class="form-group">
+                        <label for="phone"><i class="bi bi-telephone-fill"></i> Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567">
+                    </div>
+                </div>
+
+                <div class="rating-group">
+                    <label><i class="bi bi-star-fill"></i> Overall Experience *</label>
+                    <div class="star-rating" id="starRating" onmouseleave="leaveStar()">
+                        <span class="star" id="star1" onclick="clickStar(1)" onmouseenter="hoverStar(1)">★</span>
+                        <span class="star" id="star2" onclick="clickStar(2)" onmouseenter="hoverStar(2)">★</span>
+                        <span class="star" id="star3" onclick="clickStar(3)" onmouseenter="hoverStar(3)">★</span>
+                        <span class="star" id="star4" onclick="clickStar(4)" onmouseenter="hoverStar(4)">★</span>
+                        <span class="star" id="star5" onclick="clickStar(5)" onmouseenter="hoverStar(5)">★</span>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="bi bi-geo-alt-fill"></i> Which Beach Did You Visit? *</label>
+                    <select id="beach" name="beach" required>
+                        <option value="">Select a beach</option>
+                        <option value="north">North Zone Beach</option>
+                        <option value="south">South Zone Beach</option>
+                        <option value="east">East Zone Beach</option>
+                        <option value="west">West Zone Beach</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="bi bi-calendar-check-fill"></i> How Often Do You Visit?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="first" name="frequency" value="first">
+                            <label for="first">First Visit</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="occasional" name="frequency" value="occasional">
+                            <label for="occasional">Occasionally</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="regular" name="frequency" value="regular">
+                            <label for="regular">Regularly</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="bi bi-heart-fill"></i> What Did You Enjoy Most?</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="scenery" name="enjoyed" value="scenery">
+                            <label for="scenery">Beautiful Scenery</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="cleanliness" name="enjoyed" value="cleanliness">
+                            <label for="cleanliness">Cleanliness</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="facilities" name="enjoyed" value="facilities">
+                            <label for="facilities">Facilities</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="accessibility" name="enjoyed" value="accessibility">
+                            <label for="accessibility">Easy Accessibility</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="activities" name="enjoyed" value="activities">
+                            <label for="activities">Water Activities</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments"><i class="bi bi-chat-dots-fill"></i> Additional Comments</label>
+                    <textarea id="comments" name="comments" placeholder="Share your thoughts, suggestions, or any issues you encountered..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="bi bi-hand-thumbs-up-fill"></i> Would You Recommend Us?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="definitely" name="recommend" value="definitely">
+                            <label for="definitely">Definitely</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="probably" name="recommend" value="probably">
+                            <label for="probably">Probably</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="maybe" name="recommend" value="maybe">
+                            <label for="maybe">Maybe</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="unlikely" name="recommend" value="unlikely">
+                            <label for="unlikely">Unlikely</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="bi bi-send-fill"></i> Submit Feedback
+                </button>
+            </form>
+        </div>
+    </div>
 
 
     
@@ -147,7 +280,7 @@
         <div class="footer-newsletter">
             <div class="newsletter-container">
                 <div class="newsletter-content">
-                    <h3 class="newsletter-heading">🌊 Subscribe to Our Newsletter</h3>
+                    <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
                     <p class="newsletter-desc">Get updates about new beaches, travel tips, and exclusive offers!</p>
                 </div>
                 <form class="newsletter-form">
@@ -175,14 +308,101 @@
     
 <script>
 function downloadPDF() {
-    const link = document.createElement('a');
+    var link = document.createElement('a');
     link.href = './Assets/PDF/BeautifulBeachesSRS.pdf';
     link.download = 'BeautifulBeachesSRS.pdf';
     link.target = '_blank';
-    
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+}
+
+
+var selectedRating = 0;
+
+
+function clickStar(starNumber) {
+
+    selectedRating = starNumber;
+    document.getElementById('rating').value = starNumber;
+
+    makeStarsGold(starNumber);
+}
+
+function hoverStar(starNumber) {
+ 
+    makeStarsGold(starNumber);
+}
+
+function leaveStar() {
+    
+    makeStarsGold(selectedRating);
+}
+
+
+function makeStarsGold(number) {
+      var star1 = document.getElementById('star1');
+  
+    var star2 = document.getElementById('star2');
+  
+    var star3 = document.getElementById('star3');
+  
+    var star4 = document.getElementById('star4');
+  
+    var star5 = document.getElementById('star5');
+    
+ 
+    star1.classList.remove('active');
+    star2.classList.remove('active');
+    star3.classList.remove('active');
+    star4.classList.remove('active');
+    star5.classList.remove('active');
+    
+ 
+    if (number >= 1) {
+        star1.classList.add('active');
+    }
+    if (number >= 2) {
+        star2.classList.add('active');
+    }
+    if (number >= 3) {
+        star3.classList.add('active');
+    }
+    if (number >= 4) {
+        star4.classList.add('active');
+    }
+    if (number >= 5) {
+        star5.classList.add('active');
+    }
+}
+
+
+function submitForm() {
+    
+    var ratingValue = document.getElementById('rating').value;
+    
+    
+    if (ratingValue == '') {
+        alert('Please select a rating!');
+        return false;
+    }
+    
+   var successMessage = document.getElementById('successMessage');
+    
+    successMessage.style.display = 'block';
+    
+    
+    document.getElementById('feedbackForm').reset();
+    selectedRating = 0;
+    makeStarsGold(0);
+    
+    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    
+    setTimeout(function() {
+        successMessage.style.display = 'none';
+    }, 5000);
+    
+    return false;
 }
 </script>
 </body>
