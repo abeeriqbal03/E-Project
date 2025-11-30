@@ -3,186 +3,615 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us - Beautiful Beaches</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="about-us.css">
 </head>
 <body>
-    <header class="header">
-        <div class="info">
-            <span class="phone"><i class="bi bi-telephone-fill"></i> (+92) 323-12345</span>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="brand-logo">
+            <img src="./Assets/Images/logo/logo.png" alt="Beautiful Beaches">
+            <span class="brand-text">Beautiful Beaches</span>
         </div>
-
-        <div class="logo">
-            <a href="Index.html"><img src="./Assets/Images/logo/1.png" alt="Beatiful Beaches"></a>
+        
+        <div class="header-search">
+            <input type="text" placeholder="Search beaches..." class="search-input" id="searchInput">
+            <i class="bi bi-search search-icon"></i>
         </div>
-
-        <div class="H-icons">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-youtube"></i></a>
-            <a href=""><i class="bi bi-tiktok"></i></a>
+        
+        <div class="header-actions">
+            <button class="action-btn" onclick="downloadPDF()">
+                <i class="bi bi-download"></i>
+                <span>Download PDF</span>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
     </header>
 
-    <nav class="navbar">
-        <ul class="navlinks">
-            <li><a href="Index.html">HOME</a></li>
-            <li class="dropdown">
-                <a href="zone.html">ZONE <i class="bi bi-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="north.html">NORTH</a></li>
-                    <li><a href="south.html">SOUTH</a></li>
-                    <li><a href="east.html">EAST</a></li>
-                    <li><a href="west.html">WEST</a></li>
-                </ul>
-            </li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="feedback.html">FEEDBACK</a></li>
-            <li><a href="site-map.html">SITE MAP</a></li>
-            <li><a href="about-us.html">ABOUT US</a></li>
-            <li><a href="queries.html">QUERIES</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <button>DOWNLOAD PDF</button>
-        </ul>
+    <!-- Navigation Menu -->
+    <nav class="navigation-menu" id="navigationMenu">
+        <a href="Index.html" class="nav-link">
+            <i class="bi bi-house-door-fill"></i>
+            HOME
+        </a>
+        
+        <div class="nav-dropdown">
+            <a href="zone.html" class="nav-link">
+                <i class="bi bi-compass-fill"></i>
+                ZONE
+                <i class="bi bi-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu">
+                <a href="north.html" class="dropdown-link">
+                    <i class="bi bi-arrow-up-circle-fill"></i>
+                    NORTH ZONE
+                </a>
+                <a href="south.html" class="dropdown-link">
+                    <i class="bi bi-arrow-down-circle-fill"></i>
+                    SOUTH ZONE
+                </a>
+                <a href="east.html" class="dropdown-link">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                    EAST ZONE
+                </a>
+                <a href="west.html" class="dropdown-link">
+                    <i class="bi bi-arrow-left-circle-fill"></i>
+                    WEST ZONE
+                </a>
+            </div>
+        </div>
+        
+        <a href="gallery.html" class="nav-link">
+            <i class="bi bi-images"></i>
+            GALLERY
+        </a>
+        <a href="feedback.html" class="nav-link">
+            <i class="bi bi-chat-square-text-fill"></i>
+            FEEDBACK
+        </a>
+        <a href="site-map.html" class="nav-link">
+            <i class="bi bi-diagram-3-fill"></i>
+            SITE MAP
+        </a>
+        <a href="about-us.html" class="nav-link active">
+            <i class="bi bi-info-circle-fill"></i>
+            ABOUT US
+        </a>
+        <a href="queries.html" class="nav-link">
+            <i class="bi bi-question-circle-fill"></i>
+            QUERIES
+        </a>
+        <a href="contact.html" class="nav-link">
+            <i class="bi bi-telephone-fill"></i>
+            CONTACT
+        </a>
     </nav>
 
-
-
-
-
-
-
-
-    
-<footer class="footer">
-    
-    <div class="footer-content">
-        <div class="footer-container">
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    About Beautiful Beaches
-                </h3>
-                <p class="footer-desc">Discover Pakistan's most stunning coastal destinations. From pristine beaches to hidden gems, explore the beauty of our shores.</p>
-                <div class="footer-social">
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
-                </div>
-            </div>
-
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    Quick Links
-                </h3>
-                <ul class="footer-links">
-                    <li><a href="Index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
-                    <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
-                    <li><a href="about-us.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
-                    <li><a href="site-map.html"><i class="bi bi-chevron-right"></i> Site Map</a></li>
-                    <li><a href="queries.html"><i class="bi bi-chevron-right"></i> Queries</a></li>
-                    <li><a href="feedback.html"><i class="bi bi-chevron-right"></i> Feedback</a></li>
-                </ul>
-            </div>
-
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    Explore Zones
-                </h3>
-                <ul class="footer-links">
-                    <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone</a></li>
-                    <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone</a></li>
-                    <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone</a></li>
-                    <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone</a></li>
-                    <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
-                </ul>
-            </div>
-
-                        <div class="footer-col">
-                <h3 class="footer-heading">
-                    Contact Us
-                </h3>
-                <ul class="footer-contact">
-                    <li>
-                        <i class="bi bi-telephone-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Phone</strong>
-                            <a href="tel:+923231234567">(+92) 323-12345</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="bi bi-envelope-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Email</strong>
-                            <a href="mailto:info@beautifulbeaches.pk">info@beautifulbeaches.pk</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="bi bi-geo-alt-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Location</strong>
-                            <span>Karachi, Pakistan</span>
-                        </div>
-                    </li>
-                </ul>
-                <a href="contact.html" class="footer-btn">Get in Touch</a>
-            </div>
+    <!-- Animated Hero Section -->
+    <section class="about-hero">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
         </div>
-
-        
-        <div class="footer-newsletter">
-            <div class="newsletter-container">
-                <div class="newsletter-content">
-                    <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
-                    <p class="newsletter-desc">Get updates about new beaches, travel tips, and exclusive offers!</p>
-                </div>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
-                    <button type="submit" class="newsletter-btn">Subscribe</button>
-                </form>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="bi bi-award-fill"></i>
+                <span>Since 2020</span>
             </div>
-        </div>
-
-        
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <p class="copyright">&copy; 2025 Beautiful Beaches. All Rights Reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <span class="separator">|</span>
-                    <a href="#">Terms of Service</a>
-                    <span class="separator">|</span>
-                    <a href="feedback.html">Feedback</a>
+            <h1>
+                <span class="hero-subtitle">Welcome to</span>
+                <span class="hero-title">Beautiful Beaches</span>
+            </h1>
+            <p>Your Ultimate Guide to World's Most Stunning Coastal Destinations</p>
+            <div class="hero-stats">
+                <div class="hero-stat-item">
+                    <strong>72+</strong>
+                    <span>Beaches</span>
+                </div>
+                <div class="hero-stat-item">
+                    <strong>50+</strong>
+                    <span>Countries</span>
+                </div>
+                <div class="hero-stat-item">
+                    <strong>4</strong>
+                    <span>Zones</span>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-    
-<script>
-function downloadPDF() {
-    const link = document.createElement('a');
-    link.href = './Assets/PDF/BeautifulBeachesSRS.pdf';
-    link.download = 'BeautifulBeachesSRS.pdf';
-    link.target = '_blank';
-    
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-</script>
-    
+    </section>
+
+    <!-- Our Story Section with Timeline -->
+    <section class="our-story">
+        <div class="container">
+            <div class="section-title">
+                <span class="title-badge">OUR JOURNEY</span>
+                <h2>The Story Behind Beautiful Beaches</h2>
+                <p>From a passion project to the world's leading beach discovery platform</p>
+            </div>
+
+            <div class="story-grid">
+                <div class="story-content">
+                    <div class="story-block">
+                        <div class="story-icon">
+                            <i class="bi bi-lightbulb-fill"></i>
+                        </div>
+                        <div class="story-text">
+                            <h3>The Beginning</h3>
+                            <p>Founded in 2020 with a simple mission: to help travelers discover the world's most beautiful beaches. What started as a passion project has grown into a comprehensive platform trusted by thousands of beach lovers worldwide.</p>
+                        </div>
+                    </div>
+
+                    <div class="story-block">
+                        <div class="story-icon">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                        <div class="story-text">
+                            <h3>Global Expansion</h3>
+                            <p>From covering 10 beaches to over 72 stunning destinations across 4 major zones. We've personally visited and documented each location, bringing you authentic, verified information you can trust.</p>
+                        </div>
+                    </div>
+
+                    <div class="story-block">
+                        <div class="story-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div class="story-text">
+                            <h3>Community Driven</h3>
+                            <p>Today, we're proud to serve over 100,000 travelers annually, helping them plan unforgettable beach vacations. Our community continues to grow, united by a shared love for coastal paradise.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-visual">
+                    <div class="visual-card card-1">
+                        <i class="bi bi-tropical-storm"></i>
+                        <h4>Authentic Reviews</h4>
+                    </div>
+                    <div class="visual-card card-2">
+                        <i class="bi bi-camera-fill"></i>
+                        <h4>High-Quality Photos</h4>
+                    </div>
+                    <div class="visual-card card-3">
+                        <i class="bi bi-map-fill"></i>
+                        <h4>Detailed Guides</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Cards -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mv-wrapper">
+                <div class="mv-card mission-card">
+                    <div class="mv-header">
+                        <div class="mv-icon-large">
+                            <i class="bi bi-bullseye"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                    </div>
+                    <div class="mv-content">
+                        <p>To inspire and empower travelers to discover the world's most beautiful beaches by providing comprehensive, authentic, and up-to-date information about coastal destinations worldwide.</p>
+                        <ul class="mv-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Verified Information</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Expert Insights</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Community Reviews</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mv-card vision-card">
+                    <div class="mv-header">
+                        <div class="mv-icon-large">
+                            <i class="bi bi-eye-fill"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                    </div>
+                    <div class="mv-content">
+                        <p>To become the world's most trusted and comprehensive resource for beach travel, connecting millions of travelers with their dream coastal destinations while promoting sustainable tourism.</p>
+                        <ul class="mv-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Sustainable Tourism</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Global Reach</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Innovation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us - Icon Grid -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-title">
+                <span class="title-badge">WHY US</span>
+                <h2>What Makes Us Special</h2>
+                <p>Discover the features that set us apart from other beach guides</p>
+            </div>
+
+            <div class="features-showcase">
+                <div class="feature-item">
+                    <div class="feature-icon-box">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>100% Verified</h4>
+                    <p>Every beach personally visited and verified by our expert team</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon-box">
+                        <i class="bi bi-images"></i>
+                    </div>
+                    <h4>High-Quality Photos</h4>
+                    <p>Stunning professional photography of each destination</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon-box">
+                        <i class="bi bi-compass-fill"></i>
+                    </div>
+                    <h4>Easy Navigation</h4>
+                    <p>Organized by zones for quick and easy exploration</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon-box">
+                        <i class="bi bi-airplane-fill"></i>
+                    </div>
+                    <h4>Travel Planning</h4>
+                    <p>Complete guides for flights, hotels, and transportation</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon-box">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>Top Rated</h4>
+                    <p>4.9/5 average rating from thousands of travelers</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon-box">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h4>Active Community</h4>
+                    <p>Join 100K+ beach lovers sharing their experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Timeline -->
+    <section class="core-values">
+        <div class="container">
+            <div class="section-title light">
+                <span class="title-badge light">OUR PRINCIPLES</span>
+                <h2>Core Values That Guide Us</h2>
+            </div>
+
+            <div class="values-timeline">
+                <div class="value-item">
+                    <div class="value-marker">01</div>
+                    <div class="value-content">
+                        <h4>Authenticity</h4>
+                        <p>We provide genuine, unbiased information based on real experiences and thorough research</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-marker">02</div>
+                    <div class="value-content">
+                        <h4>Quality Excellence</h4>
+                        <p>Every piece of content undergoes rigorous verification to ensure accuracy and reliability</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-marker">03</div>
+                    <div class="value-content">
+                        <h4>Sustainability</h4>
+                        <p>We actively promote responsible tourism and environmental conservation at all destinations</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-marker">04</div>
+                    <div class="value-content">
+                        <h4>Innovation</h4>
+                        <p>Constantly evolving our platform with new features and cutting-edge travel technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section with Hover Cards -->
+    <section class="our-team">
+        <div class="container">
+            <div class="section-title">
+                <span class="title-badge">OUR PEOPLE</span>
+                <h2>Meet The Dream Team</h2>
+                <p>Passionate experts dedicated to bringing you the best beach experiences</p>
+            </div>
+
+            <div class="team-showcase">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="./Assets/Images/team/member1.jpg" alt="Sarah Johnson">
+                        <div class="member-badge">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Sarah Johnson</h4>
+                        <span class="member-role">Founder & CEO</span>
+                        <p>15+ years exploring beaches worldwide</p>
+                        <div class="member-socials">
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="./Assets/Images/team/member2.jpg" alt="Michael Chen">
+                        <div class="member-badge">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Michael Chen</h4>
+                        <span class="member-role">Head of Content</span>
+                        <p>Award-winning travel photographer</p>
+                        <div class="member-socials">
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="./Assets/Images/team/member3.jpg" alt="Emma Rodriguez">
+                        <div class="member-badge">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Emma Rodriguez</h4>
+                        <span class="member-role">Travel Advisor</span>
+                        <p>Sustainable tourism specialist</p>
+                        <div class="member-socials">
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="./Assets/Images/team/member4.jpg" alt="David Kim">
+                        <div class="member-badge">
+                            <i class="bi bi-gear-fill"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>David Kim</h4>
+                        <span class="member-role">Operations Manager</span>
+                        <p>Ensuring exceptional experience</p>
+                        <div class="member-socials">
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Banner -->
+    <section class="stats-banner">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>72+</h3>
+                        <p>Beach Destinations</p>
+                    </div>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>50+</h3>
+                        <p>Countries Covered</p>
+                    </div>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>100K+</h3>
+                        <p>Happy Travelers</p>
+                    </div>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>4.9/5</h3>
+                        <p>Average Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Wave -->
+    <section class="cta-section">
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Discover Paradise?</h2>
+                <p>Join thousands of travelers exploring the world's most beautiful beaches</p>
+                <div class="cta-buttons">
+                    <a href="zone.html" class="cta-btn primary">
+                        <i class="bi bi-compass-fill"></i>
+                        Explore Beaches
+                    </a>
+                    <a href="contact.html" class="cta-btn secondary">
+                        <i class="bi bi-envelope-fill"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3 class="footer-heading">
+                        About Beautiful Beaches
+                    </h3>
+                    <p class="footer-desc">Discover world's most stunning coastal destinations. From pristine beaches to hidden gems, explore the beauty of our shores.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">
+                        Quick Links
+                    </h3>
+                    <ul class="footer-links">
+                        <li><a href="Index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about-us.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                        <li><a href="site-map.html"><i class="bi bi-chevron-right"></i> Site Map</a></li>
+                        <li><a href="queries.html"><i class="bi bi-chevron-right"></i> Queries</a></li>
+                        <li><a href="feedback.html"><i class="bi bi-chevron-right"></i> Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">
+                        Explore Zones
+                    </h3>
+                    <ul class="footer-links">
+                        <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone</a></li>
+                        <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone</a></li>
+                        <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone</a></li>
+                        <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone</a></li>
+                        <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">
+                        Contact Us
+                    </h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-telephone-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Phone</strong>
+                                <a href="tel:+18001234567">+1 (800) 123-4567</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Email</strong>
+                                <a href="mailto:info@beautifulbeaches.com">info@beautifulbeaches.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Location</strong>
+                                <span>Worldwide</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="footer-btn">Get in Touch</a>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
+                        <p class="newsletter-desc">Get updates about new beaches, travel tips, and exclusive offers!</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 Beautiful Beaches. All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <span class="separator">|</span>
+                        <a href="#">Terms of Service</a>
+                        <span class="separator">|</span>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function downloadPDF() {
+        const link = document.createElement('a');
+        link.href = './Assets/PDF/BeautifulBeachesSRS.pdf';
+        link.download = 'BeautifulBeachesSRS.pdf';
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+    </script>
 </body>
 </html>

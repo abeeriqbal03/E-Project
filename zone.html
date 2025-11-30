@@ -5,51 +5,856 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="zone.css">
+    <link rel="stylesheet" href="north.css">
 </head>
 <body>
-    <header class="header">
-        <div class="info">
-            <span class="phone"><i class="bi bi-telephone-fill"></i> (+92) 323-12345</span>
+          <header class="main-header">
+        <div class="brand-logo">
+            <img src="./Assets/Images/logo/logo.png" alt="Beautiful Beaches">
+            <span class="brand-text">Beautiful Beaches</span>
         </div>
-
-        <div class="logo">
-            <a href="Index.html"><img src="./Assets/Images/logo/1.png" alt="Beatiful Beaches"></a>
+        
+        <div class="header-search">
+            <input type="text" placeholder="Search beaches..." class="search-input" id="searchInput">
+            <i class="bi bi-search search-icon"></i>
         </div>
-
-        <div class="icons">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-youtube"></i></a>
-            <a href=""><i class="bi bi-tiktok"></i></a>
+        
+        <div class="header-actions">
+            <button class="action-btn" onclick="downloadPDF()">
+                <i class="bi bi-download"></i>
+                <span>Download PDF</span>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
     </header>
 
-    <nav class="navbar">
-        <ul class="navlinks">
-            <li><a href="Index.html">HOME</a></li>
-            <li class="dropdown">
-                <a href="zone.html">ZONE <i class="bi bi-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="north.html">NORTH</a></li>
-                    <li><a href="south.html">SOUTH</a></li>
-                    <li><a href="east.html">EAST</a></li>
-                    <li><a href="west.html">WEST</a></li>
-                </ul>
-            </li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="feedback.html">FEEDBACK</a></li>
-            <li><a href="site-map.html">SITE MAP</a></li>
-            <li><a href="about-us.html">ABOUT US</a></li>
-            <li><a href="queries.html">QUERIES</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <button>DOWNLOAD PDF</button>
-        </ul>
+    <!-- Enhanced Navigation -->
+    <nav class="navigation-menu" id="navigationMenu">
+        <a href="Index.html" class="nav-link active">
+            <i class="bi bi-house-door-fill"></i>
+            HOME
+        </a>
+        
+        <div class="nav-dropdown">
+            <a href="zone.html" class="nav-link">
+                <i class="bi bi-compass-fill"></i>
+                ZONE
+                <i class="bi bi-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu">
+                <a href="north.html" class="dropdown-link">
+                    <i class="bi bi-arrow-up-circle-fill"></i>
+                    NORTH ZONE
+                </a>
+                <a href="south.html" class="dropdown-link">
+                    <i class="bi bi-arrow-down-circle-fill"></i>
+                    SOUTH ZONE
+                </a>
+                <a href="east.html" class="dropdown-link">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                    EAST ZONE
+                </a>
+                <a href="west.html" class="dropdown-link">
+                    <i class="bi bi-arrow-left-circle-fill"></i>
+                    WEST ZONE
+                </a>
+            </div>
+        </div>
+        
+        <a href="gallery.html" class="nav-link">
+            <i class="bi bi-images"></i>
+            GALLERY
+        </a>
+        <a href="feedback.html" class="nav-link">
+            <i class="bi bi-chat-square-text-fill"></i>
+            FEEDBACK
+        </a>
+        <a href="site-map.html" class="nav-link">
+            <i class="bi bi-diagram-3-fill"></i>
+            SITE MAP
+        </a>
+        <a href="about-us.html" class="nav-link">
+            <i class="bi bi-info-circle-fill"></i>
+            ABOUT US
+        </a>
+        <a href="queries.html" class="nav-link">
+            <i class="bi bi-question-circle-fill"></i>
+            QUERIES
+        </a>
+        <a href="contact.html" class="nav-link">
+            <i class="bi bi-telephone-fill"></i>
+            CONTACT
+        </a>
     </nav>
 
+<section class="page-title">
+    <h1>Featured Beaches Around the North Zone</h1>
+    <p>Discover the most stunning coastal destinations across continents</p>
+</section>
 
+<section class="region-section">
+    <h2 class="region-title">USA</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Waikiki Beach.png" alt="Waikiki Beach">
+            <div class="destination-info">
+                <h3>Waikiki Beach - USA</h3>
+                <p>Experience the iconic shores of Waikiki Beach in Hawaii — where golden sands meet crystal-clear waters, perfect for surfing and unforgettable sunsets.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Miami Beach.png" alt="Miami Beach">
+            <div class="destination-info">
+                <h3>Miami Beach - USA</h3>
+                <p>Dive into the vibrant energy of Miami Beach, Florida — where Art Deco architecture meets turquoise waters and world-class nightlife.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Santa Monica Beach.png" alt="Santa Monica Beach">
+            <div class="destination-info">
+                <h3>Santa Monica Beach - USA</h3>
+                <p>Discover California's legendary Santa Monica Beach — home to the famous pier, vibrant boardwalk, and endless ocean views.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Clearwater Beach.png" alt="Clearwater Beach">
+            <div class="destination-info">
+                <h3>Clearwater Beach - USA</h3>
+                <p>Relax on the powdery white sands of Clearwater Beach, Florida — consistently rated as one of America's best beaches with stunning Gulf Coast sunsets.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="region-section">
+    <h2 class="region-title">Mexico</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Cancun Beach.png" alt="Cancun Beach">
+            <div class="destination-info">
+                <h3>Cancun Beach - Mexico</h3>
+                <p>Discover the paradise of Cancun Beach — featuring pristine white sand, turquoise Caribbean waters, and luxurious resorts along the Hotel Zone.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Playa del Carmen.png" alt="Playa del Carmen">
+            <div class="destination-info">
+                <h3>Playa del Carmen - Mexico</h3>
+                <p>Explore Playa del Carmen — a trendy beach town with beautiful shores, vibrant nightlife, and easy access to Mayan ruins and cenotes.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Tulum Beach.png" alt="Tulum Beach">
+            <div class="destination-info">
+                <h3>Tulum Beach - Mexico</h3>
+                <p>Visit Tulum Beach — where ancient Mayan ruins overlook stunning Caribbean coastline, offering a perfect blend of history and natural beauty.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="region-section">
+    <h2 class="region-title">Europe</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Navagio Beach (Shipwreck Beach).png" alt="Navagio Beach">
+            <div class="destination-info">
+                <h3>Navagio Beach (Shipwreck Beach) - Greece</h3>
+                <p>Discover the hidden gem of Navagio Beach, Greece — featuring dramatic cliffs, pristine turquoise waters, and the famous shipwreck on its shores.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Myrtos Beach.png" alt="Myrtos Beach">
+            <div class="destination-info">
+                <h3>Myrtos Beach - Greece</h3>
+                <p>Experience the breathtaking beauty of Myrtos Beach, Greece — where white pebbles contrast with brilliant blue waters against towering cliffs.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Elafonissi Beach.png" alt="Elafonissi Beach">
+            <div class="destination-info">
+                <h3>Elafonissi Beach - Greece</h3>
+                <p>Visit the exotic Elafonissi Beach, Greece — famous for its pink sand created by crushed shells, shallow turquoise lagoons, and stunning natural beauty.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Praia da Marinha.png" alt="Praia da Marinha">
+            <div class="destination-info">
+                <h3>Praia da Marinha - Portugal</h3>
+                <p>Explore Portugal's stunning Praia da Marinha — featuring dramatic limestone cliffs, hidden caves, and some of Europe's clearest waters.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/La Concha Beach.png" alt="La Concha Beach">
+            <div class="destination-info">
+                <h3>La Concha Beach - Spain</h3>
+                <p>Stroll along La Concha Beach, Spain — an elegant urban beach with golden sand, calm waters, and stunning views of San Sebastián's bay.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Zlatni Rat.png" alt="Zlatni Rat">
+            <div class="destination-info">
+                <h3>Zlatni Rat - Croatia</h3>
+                <p>Visit Croatia's iconic Zlatni Rat — a unique golden cape that shifts with the tides, surrounded by crystal-clear Adriatic waters.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Reynisfjara Black Sand Beach.png" alt="Reynisfjara Black Sand Beach">
+            <div class="destination-info">
+                <h3>Reynisfjara Black Sand Beach - Iceland</h3>
+                <p>Witness the otherworldly beauty of Reynisfjara, Iceland — where volcanic black sand meets powerful waves and dramatic basalt columns.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Nice Beach.png" alt="Nice Beach">
+            <div class="destination-info">
+                <h3>Nice Beach - France</h3>
+                <p>Experience the elegance of Nice Beach, France — the famous Promenade des Anglais, stunning French Riviera views, and Mediterranean charm.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="region-section">
+    <h2 class="region-title">Middle East</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Jumeirah Beach.png" alt="Jumeirah Beach">
+            <div class="destination-info">
+                <h3>Jumeirah Beach - Dubai</h3>
+                <p>Indulge in the luxury of Jumeirah Beach, Dubai — where pristine white sand meets turquoise waters with the iconic Burj Al Arab as backdrop.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Corniche Beach.png" alt="Corniche Beach">
+            <div class="destination-info">
+                <h3>Corniche Beach - Abu Dhabi</h3>
+                <p>Relax at Corniche Beach, Abu Dhabi — a beautiful urban beach with clear waters, beachfront cafes, and stunning views of the city skyline.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Africa</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Hurghada Beach.png" alt="Hurghada Beach">
+            <div class="destination-info">
+                <h3>Hurghada Beach - Egypt</h3>
+                <p>Discover Hurghada Beach, Egypt — a Red Sea paradise offering world-class diving, vibrant coral reefs, and year-round sunshine.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Sharm El Sheikh Beach.png" alt="Sharm El Sheikh Beach">
+            <div class="destination-info">
+                <h3>Sharm El Sheikh Beach - Egypt</h3>
+                <p>Experience Sharm El Sheikh Beach, Egypt — renowned for its spectacular underwater world, luxury resorts, and pristine Red Sea coastline.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Agadir Beach.png" alt="Agadir Beach">
+            <div class="destination-info">
+                <h3>Agadir Beach - Morocco</h3>
+                <p>Enjoy Agadir Beach, Morocco — a modern resort destination with a long sandy beach, warm climate, and stunning views of the Atlas Mountains.</p>
+            </div>
+        </div>
+    </div>
+</section>
     
 
+<section class="page-title">
+    <h1>Featured Beaches Around the South Zone</h1>
+    <p>Discover the most stunning coastal destinations across southern continents</p>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Australia</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Bondi Beach.png" alt="Bondi Beach">
+            <div class="destination-info">
+                <h3>Bondi Beach - Australia</h3>
+                <p>Explore the iconic Bondi Beach, Australia — famous for its golden sands, world-class surfing waves, and vibrant coastal culture in Sydney.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Whitehaven Beach.png" alt="Whitehaven Beach">
+            <div class="destination-info">
+                <h3>Whitehaven Beach - Australia</h3>
+                <p>Discover the pristine Whitehaven Beach, Australia — renowned for its silica sands that squeak underfoot, turquoise waters, and lush rainforest backdrop.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Gold Coast Beach.png" alt="Gold Coast Beach">
+            <div class="destination-info">
+                <h3>Gold Coast Beach - Australia</h3>
+                <p>Experience the lively Gold Coast Beach, Australia — a stretch of golden sands with thrilling surf spots, theme parks, and endless sunshine.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Cable Beach.png" alt="Cable Beach">
+            <div class="destination-info">
+                <h3>Cable Beach - Australia</h3>
+                <p>Visit Cable Beach, Australia — known for its red sands, camel rides at sunset, and stunning views of the Indian Ocean in Western Australia.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Hyams Beach.png" alt="Hyams Beach">
+            <div class="destination-info">
+                <h3>Hyams Beach - Australia</h3>
+                <p>Relax on Hyams Beach, Australia — celebrated for its powdery white sands, crystal-clear waters, and proximity to Jervis Bay's marine life.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Bells Beach.png" alt="Bells Beach">
+            <div class="destination-info">
+                <h3>Bells Beach - Australia</h3>
+                <p>Witness the legendary Bells Beach, Australia — a surfing paradise with massive waves, rugged cliffs, and the famous Rip Curl Pro competition.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">New Zealand</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Piha Beach.png" alt="Piha Beach">
+            <div class="destination-info">
+                <h3>Piha Beach - New Zealand</h3>
+                <p>Discover Piha Beach, New Zealand — a dramatic black sand beach with powerful surf, rugged landscapes, and stunning Tasman Sea views.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Ninety Mile Beach.png" alt="Ninety Mile Beach">
+            <div class="destination-info">
+                <h3>Ninety Mile Beach - New Zealand</h3>
+                <p>Explore Ninety Mile Beach, New Zealand — one of the world's longest beaches, offering endless golden sands, tidal flats, and unique coastal scenery.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Brazil</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Copacabana Beach.png" alt="Copacabana Beach">
+            <div class="destination-info">
+                <h3>Copacabana Beach - Brazil</h3>
+                <p>Experience the vibrant Copacabana Beach, Brazil — Rio's famous stretch of sand with mosaic sidewalks, lively atmosphere, and iconic Sugarloaf views.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Ipanema Beach.png" alt="Ipanema Beach">
+            <div class="destination-info">
+                <h3>Ipanema Beach - Brazil</h3>
+                <p>Relax on Ipanema Beach, Brazil — known for its beautiful people, colorful umbrellas, and the birthplace of the bossa nova in Rio de Janeiro.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Lopes Mendes Beach.png" alt="Lopes Mendes Beach">
+            <div class="destination-info">
+                <h3>Lopes Mendes Beach - Brazil</h3>
+                <p>Visit the secluded Lopes Mendes Beach, Brazil — a paradise on Ilha Grande with pristine sands, emerald waters, and lush Atlantic rainforest.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Uruguay</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Punta del Este.png" alt="Punta del Este">
+            <div class="destination-info">
+                <h3>Punta del Este - Uruguay</h3>
+                <p>Discover Punta del Este, Uruguay — a glamorous beach resort with golden sands, luxury hotels, and the stunning meeting point of the Atlantic and Rio de la Plata.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">South Africa</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Clifton Beach.png" alt="Clifton Beach">
+            <div class="destination-info">
+                <h3>Clifton Beach - South Africa</h3>
+                <p>Explore Clifton Beach, South Africa — four pristine coves in Cape Town with white sands, clear waters, and breathtaking views of Table Mountain.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Camps Bay Beach.png" alt="Camps Bay Beach">
+            <div class="destination-info">
+                <h3>Camps Bay Beach - South Africa</h3>
+                <p>Enjoy Camps Bay Beach, South Africa — a scenic urban beach with palm-lined promenades, vibrant cafes, and the Twelve Apostles mountain range.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Boulders Beach.png" alt="Boulders Beach">
+            <div class="destination-info">
+                <h3>Boulders Beach - South Africa</h3>
+                <p>Visit Boulders Beach, South Africa — home to a colony of African penguins, granite boulders, and calm waters near Cape Point.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Seychelles</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Anse Source d’Argent.png" alt="Anse Source d’Argent">
+            <div class="destination-info">
+                <h3>Anse Source d’Argent - Seychelles</h3>
+                <p>Discover Anse Source d’Argent, Seychelles — famous for its granite boulders, turquoise lagoon, and award-winning beauty on La Digue island.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Beau Vallon Beach.png" alt="Beau Vallon Beach">
+            <div class="destination-info">
+                <h3>Beau Vallon Beach - Seychelles</h3>
+                <p>Relax at Beau Vallon Beach, Seychelles — the island's most popular beach with soft white sands, clear waters, and vibrant marine life.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Madagascar</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Nosy Be Beaches.png" alt="Nosy Be Beaches">
+            <div class="destination-info">
+                <h3>Nosy Be Beaches - Madagascar</h3>
+                <p>Explore Nosy Be Beaches, Madagascar — a collection of stunning shores around the island with pristine sands, coral reefs, and lush tropical landscapes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ 
+
+<section class="page-title">
+    <h1>Featured Beaches Around the East Zone</h1>
+    <p>Discover the most stunning coastal destinations across eastern continents</p>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Philippines</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/White Beach (Boracay).png" alt="White Beach (Boracay)">
+            <div class="destination-info">
+                <h3>White Beach (Boracay) - Philippines</h3>
+                <p>Discover White Beach in Boracay, Philippines — a powdery white sand paradise with crystal-clear waters, vibrant nightlife, and endless water sports.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/El Nido Beach.png" alt="El Nido Beach">
+            <div class="destination-info">
+                <h3>El Nido Beach - Philippines</h3>
+                <p>Explore El Nido Beach, Philippines — surrounded by limestone cliffs, turquoise lagoons, and ideal for island hopping and adventure activities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Vietnam</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Nha Trang Beach.png" alt="Nha Trang Beach">
+            <div class="destination-info">
+                <h3>Nha Trang Beach - Vietnam</h3>
+                <p>Relax on Nha Trang Beach, Vietnam — known for its pristine sands, vibrant coral reefs, and a mix of relaxation and water-based adventures.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Da Nang Beach.png" alt="Da Nang Beach">
+            <div class="destination-info">
+                <h3>Da Nang Beach - Vietnam</h3>
+                <p>Visit Da Nang Beach, Vietnam — a long stretch of golden sand with modern resorts, Son Tra Peninsula views, and exciting beach activities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">South Korea</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Haeundae Beach.png" alt="Haeundae Beach">
+            <div class="destination-info">
+                <h3>Haeundae Beach - South Korea</h3>
+                <p>Experience Haeundae Beach, South Korea — Busan's iconic urban beach with wide sands, luxury hotels, and a lively atmosphere for all seasons.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Jeju Beach.png" alt="Jeju Beach">
+            <div class="destination-info">
+                <h3>Jeju Beach - South Korea</h3>
+                <p>Discover Jeju Beach, South Korea — featuring volcanic sands, clear waters, and proximity to Jeju Island's natural wonders and hiking trails.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Japan</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Okinawa Beaches - Japan.png" alt="Okinawa Beaches">
+            <div class="destination-info">
+                <h3>Okinawa Beaches - Japan</h3>
+                <p>Explore Okinawa Beaches, Japan — a collection of stunning shores with emerald waters, coral reefs, and a blend of culture and relaxation.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Miyakojima Beach.png" alt="Miyakojima Beach">
+            <div class="destination-info">
+                <h3>Miyakojima Beach - Japan</h3>
+                <p>Visit Miyakojima Beach, Japan — known for its soft white sands, star-shaped sandbar, and serene island vibes in the Miyako Islands.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Indonesia</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Bali (Kuta Beach).png" alt="Bali (Kuta Beach)">
+            <div class="destination-info">
+                <h3>Bali (Kuta Beach) - Indonesia</h3>
+                <p>Experience Bali's Kuta Beach, Indonesia — a surfer's paradise with golden sands, vibrant nightlife, and stunning sunsets over the Indian Ocean.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Nusa Dua.png" alt="Nusa Dua">
+            <div class="destination-info">
+                <h3>Nusa Dua - Indonesia</h3>
+                <p>Relax at Nusa Dua, Indonesia — Bali's luxury beach area with pristine white sands, calm waters, and world-class resorts and spas.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Gili Islands.png" alt="Gili Islands">
+            <div class="destination-info">
+                <h3>Gili Islands - Indonesia</h3>
+                <p>Discover the Gili Islands, Indonesia — trio of paradise islands with powdery beaches, crystal-clear lagoons, and opportunities for snorkeling and diving.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Malaysia</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Langkawi Beach.png" alt="Langkawi Beach">
+            <div class="destination-info">
+                <h3>Langkawi Beach - Malaysia</h3>
+                <p>Explore Langkawi Beach, Malaysia — featuring soft white sands, duty-free shopping, and access to rainforests and cable car rides.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Perhentian Islands.png" alt="Perhentian Islands">
+            <div class="destination-info">
+                <h3>Perhentian Islands - Malaysia</h3>
+                <p>Visit the Perhentian Islands, Malaysia — a diver's haven with turquoise waters, coral reefs, and secluded beaches for ultimate relaxation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Thailand</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Phuket (Patong Beach).png" alt="Phuket (Patong Beach)">
+            <div class="destination-info">
+                <h3>Phuket (Patong Beach) - Thailand</h3>
+                <p>Experience Patong Beach in Phuket, Thailand — a bustling stretch of sand with vibrant nightlife, water sports, and tropical island vibes.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Maya Bay.png" alt="Maya Bay">
+            <div class="destination-info">
+                <h3>Maya Bay - Thailand</h3>
+                <p>Discover Maya Bay, Thailand — the iconic location from The Beach movie, with emerald waters, limestone cliffs, and pristine natural beauty.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Koh Samui.png" alt="Koh Samui">
+            <div class="destination-info">
+                <h3>Koh Samui - Thailand</h3>
+                <p>Relax on Koh Samui, Thailand — known for its coconut palms, white-sand beaches, and a mix of luxury resorts and cultural experiences.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">China</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Sanya Beach - China.png" alt="Sanya Beach">
+            <div class="destination-info">
+                <h3>Sanya Beach - China</h3>
+                <p>Visit Sanya Beach, China — Hainan's tropical paradise with palm-fringed shores, clear waters, and a gateway to China's southernmost resorts.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="page-title">
+    <h1>Featured Beaches Around the West Zone</h1>
+    <p>Discover the most stunning coastal destinations across western continents</p>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">USA</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Pfeiffer Beach.png" alt="Pfeiffer Beach">
+            <div class="destination-info">
+                <h3>Pfeiffer Beach - USA</h3>
+                <p>Explore Pfeiffer Beach, USA — famous for its purple sand, dramatic rock formations, and the iconic Keyhole Arch along California's Big Sur coast.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Moonstone Beach.png" alt="Moonstone Beach">
+            <div class="destination-info">
+                <h3>Moonstone Beach - USA</h3>
+                <p>Discover Moonstone Beach, USA — a serene California coastline known for moonstone gem hunting, scenic boardwalks, and stunning sunset views in Cambria.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Glass Beach (Fort Bragg) .png" alt="Glass Beach">
+            <div class="destination-info">
+                <h3>Glass Beach (Fort Bragg) - USA</h3>
+                <p>Visit Glass Beach, USA — where decades of ocean tumbling transformed discarded glass into a sparkling shore of colorful sea glass gems in Fort Bragg, California.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/La Jolla Shores.png" alt="La Jolla Shores">
+            <div class="destination-info">
+                <h3>La Jolla Shores - USA</h3>
+                <p>Relax at La Jolla Shores, USA — a family-friendly San Diego beach with gentle waves, tide pools, sea lions, and excellent snorkeling opportunities.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Ruby Beach.png" alt="Ruby Beach">
+            <div class="destination-info">
+                <h3>Ruby Beach - USA</h3>
+                <p>Experience Ruby Beach, USA — a rugged Washington coastline featuring towering sea stacks, driftwood-strewn shores, and stunning Olympic Peninsula wilderness.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Shi Shi Beach.png" alt="Shi Shi Beach">
+            <div class="destination-info">
+                <h3>Shi Shi Beach - USA</h3>
+                <p>Trek to Shi Shi Beach, USA — a remote Washington wilderness beach with dramatic Point of Arches rock formations and pristine Pacific Northwest beauty.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Canada</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Rathtrevor Beach.png" alt="Rathtrevor Beach">
+            <div class="destination-info">
+                <h3>Rathtrevor Beach - Canada</h3>
+                <p>Explore Rathtrevor Beach, Canada — a stunning Vancouver Island destination with vast sandy shores at low tide and warm shallow waters perfect for families.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Spanish Banks Beach .png" alt="Spanish Banks Beach">
+            <div class="destination-info">
+                <h3>Spanish Banks Beach - Canada</h3>
+                <p>Discover Spanish Banks Beach, Canada — Vancouver's expansive sandy shoreline with incredible mountain views, warm tidal pools, and spectacular sunsets.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Kitsilano Beach .png" alt="Kitsilano Beach">
+            <div class="destination-info">
+                <h3>Kitsilano Beach - Canada</h3>
+                <p>Visit Kitsilano Beach, Canada — Vancouver's vibrant urban beach featuring a saltwater pool, beach volleyball courts, and stunning city skyline views.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Mexico</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Sayulita Beach.png" alt="Sayulita Beach">
+            <div class="destination-info">
+                <h3>Sayulita Beach - Mexico</h3>
+                <p>Experience Sayulita Beach, Mexico — a colorful surf town on the Riviera Nayarit with laid-back vibes, excellent waves, and vibrant local culture.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Balandra Beach.png" alt="Balandra Beach">
+            <div class="destination-info">
+                <h3>Balandra Beach - Mexico</h3>
+                <p>Discover Balandra Beach, Mexico — a protected paradise near La Paz with shallow turquoise waters, the famous mushroom rock, and pristine white sand.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Playa La Ropa.png" alt="Playa La Ropa">
+            <div class="destination-info">
+                <h3>Playa La Ropa - Mexico</h3>
+                <p>Relax at Playa La Ropa, Mexico — Zihuatanejo's beautiful crescent beach with calm waters, beachfront restaurants, and stunning sunset views.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Chile</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Playa Anakena.png" alt="Playa Anakena">
+            <div class="destination-info">
+                <h3>Playa Anakena - Chile</h3>
+                <p>Visit Playa Anakena, Chile — Easter Island's most beautiful beach with white coral sand, palm trees, and ancient moai statues overlooking the shore.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Playa Cavancha.png" alt="Playa Cavancha">
+            <div class="destination-info">
+                <h3>Playa Cavancha - Chile</h3>
+                <p>Explore Playa Cavancha, Chile — Iquique's urban beach paradise with golden sands, perfect surf conditions, and a lively waterfront promenade.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Peru</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Playa Roja.png" alt="Playa Roja">
+            <div class="destination-info">
+                <h3>Playa Roja - Peru</h3>
+                <p>Discover Playa Roja, Peru — the stunning Red Beach in Paracas with unique red sand created by volcanic rock and dramatic coastal cliffs.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Punta Hermosa.png" alt="Punta Hermosa">
+            <div class="destination-info">
+                <h3>Punta Hermosa - Peru</h3>
+                <p>Experience Punta Hermosa, Peru — Lima's premier surf destination with consistent waves, sandy beaches, and a relaxed coastal village atmosphere.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Ecuador</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Los Frailes Beach.png" alt="Los Frailes Beach">
+            <div class="destination-info">
+                <h3>Los Frailes Beach - Ecuador</h3>
+                <p>Visit Los Frailes Beach, Ecuador — one of South America's most pristine beaches with crystal-clear waters, protected nature reserve, and untouched beauty.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Canoa Beach.png" alt="Canoa Beach">
+            <div class="destination-info">
+                <h3>Canoa Beach - Ecuador</h3>
+                <p>Relax at Canoa Beach, Ecuador — a long stretch of golden sand perfect for surfing, paragliding, and enjoying the laid-back coastal lifestyle.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Ghana</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Labadi Beach - Ghana.png" alt="Labadi Beach">
+            <div class="destination-info">
+                <h3>Labadi Beach - Ghana</h3>
+                <p>Experience Labadi Beach, Ghana — Accra's most popular beach with lively music, local food vendors, horseback riding, and vibrant West African culture.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="region-section">
+    <h2 class="region-title">Nigeria</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="./assets/images/Beach Images/Elegushi Beach.png" alt="Elegushi Beach">
+            <div class="destination-info">
+                <h3>Elegushi Beach - Nigeria</h3>
+                <p>Discover Elegushi Beach, Nigeria — Lagos's trendy beach destination with golden sands, beach parties, water sports, and a vibrant social scene.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 

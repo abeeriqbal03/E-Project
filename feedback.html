@@ -3,58 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feedback - Beautiful Beaches</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="feedback.css">
 </head>
 <body>
-    <header class="header">
-        <div class="info">
-            <span class="phone"><i class="bi bi-telephone-fill"></i> (+92) 323-12345</span>
+          <header class="main-header">
+        <div class="brand-logo">
+            <img src="./Assets/Images/logo/logo.png" alt="Beautiful Beaches">
+            <span class="brand-text">Beautiful Beaches</span>
         </div>
-
-        <div class="logo">
-            <a href="Index.html"><img src="./Assets/Images/logo/1.png" alt="Beatiful Beaches"></a>
+        
+        <div class="header-search">
+            <input type="text" placeholder="Search beaches..." class="search-input" id="searchInput">
+            <i class="bi bi-search search-icon"></i>
         </div>
-
-        <div class="icons">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-youtube"></i></a>
-            <a href=""><i class="bi bi-tiktok"></i></a>
+        
+        <div class="header-actions">
+            <button class="action-btn" onclick="downloadPDF()">
+                <i class="bi bi-download"></i>
+                <span>Download PDF</span>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
     </header>
 
-    <nav class="navbar">
-        <ul class="navlinks">
-            <li><a href="Index.html">HOME</a></li>
-            <li class="dropdown">
-                <a href="zone.html">ZONE <i class="bi bi-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="north.html">NORTH</a></li>
-                    <li><a href="south.html">SOUTH</a></li>
-                    <li><a href="east.html">EAST</a></li>
-                    <li><a href="west.html">WEST</a></li>
-                </ul>
-            </li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="feedback.html">FEEDBACK</a></li>
-            <li><a href="site-map.html">SITE MAP</a></li>
-            <li><a href="about-us.html">ABOUT US</a></li>
-            <li><a href="queries.html">QUERIES</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <button>DOWNLOAD PDF</button>
-        </ul>
+    <nav class="navigation-menu" id="navigationMenu">
+        <a href="Index.html" class="nav-link ">
+            <i class="bi bi-house-door-fill"></i>
+            HOME
+        </a>
+        
+        <div class="nav-dropdown">
+            <a href="zone.html" class="nav-link">
+                <i class="bi bi-compass-fill"></i>
+                ZONE
+                <i class="bi bi-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu">
+                <a href="north.html" class="dropdown-link">
+                    <i class="bi bi-arrow-up-circle-fill"></i>
+                    NORTH ZONE
+                </a>
+                <a href="south.html" class="dropdown-link">
+                    <i class="bi bi-arrow-down-circle-fill"></i>
+                    SOUTH ZONE
+                </a>
+                <a href="east.html" class="dropdown-link">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                    EAST ZONE
+                </a>
+                <a href="west.html" class="dropdown-link">
+                    <i class="bi bi-arrow-left-circle-fill"></i>
+                    WEST ZONE
+                </a>
+            </div>
+        </div>
+        
+        <a href="gallery.html" class="nav-link">
+            <i class="bi bi-images"></i>
+            GALLERY
+        </a>
+        <a href="feedback.html" class="nav-link active">
+            <i class="bi bi-chat-square-text-fill"></i>
+            FEEDBACK
+        </a>
+        <a href="site-map.html" class="nav-link">
+            <i class="bi bi-diagram-3-fill"></i>
+            SITE MAP
+        </a>
+        <a href="about-us.html" class="nav-link">
+            <i class="bi bi-info-circle-fill"></i>
+            ABOUT US
+        </a>
+        <a href="queries.html" class="nav-link">
+            <i class="bi bi-question-circle-fill"></i>
+            QUERIES
+        </a>
+        <a href="contact.html" class="nav-link">
+            <i class="bi bi-telephone-fill"></i>
+            CONTACT
+        </a>
     </nav>
 
-
-    <!-- Feedback Hero Section -->
     <section class="feedback-hero">
         <h1><i class="bi bi-chat-heart-fill"></i> Share Your Feedback</h1>
         <p>We value your opinion! Help us improve your beach experience.</p>
     </section>
 
-    <!-- Feedback Form -->
     <div class="feedback-container">
         <div class="feedback-card">
             <div class="success-message" id="successMessage">
@@ -82,7 +120,7 @@
 
                     <div class="form-group">
                         <label for="phone"><i class="bi bi-telephone-fill"></i> Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567">
+                        <input type="number" id="phone" name="phone" placeholder="+92 300 1234567">
                     </div>
                 </div>
 
@@ -188,125 +226,115 @@
         </div>
     </div>
 
-
-    
-<footer class="footer">
-    
-    <div class="footer-content">
-        <div class="footer-container">
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    About Beautiful Beaches
-                </h3>
-                <p class="footer-desc">Discover Pakistan's most stunning coastal destinations. From pristine beaches to hidden gems, explore the beauty of our shores.</p>
-                <div class="footer-social">
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
-                </div>
-            </div>
-
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    Quick Links
-                </h3>
-                <ul class="footer-links">
-                    <li><a href="Index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
-                    <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
-                    <li><a href="about-us.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
-                    <li><a href="site-map.html"><i class="bi bi-chevron-right"></i> Site Map</a></li>
-                    <li><a href="queries.html"><i class="bi bi-chevron-right"></i> Queries</a></li>
-                    <li><a href="feedback.html"><i class="bi bi-chevron-right"></i> Feedback</a></li>
-                </ul>
-            </div>
-
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    Explore Zones
-                </h3>
-                <ul class="footer-links">
-                    <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone</a></li>
-                    <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone</a></li>
-                    <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone</a></li>
-                    <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone</a></li>
-                    <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
-                </ul>
-            </div>
-
-                        <div class="footer-col">
-                <h3 class="footer-heading">
-                    Contact Us
-                </h3>
-                <ul class="footer-contact">
-                    <li>
-                        <i class="bi bi-telephone-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Phone</strong>
-                            <a href="tel:+923231234567">(+92) 323-12345</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="bi bi-envelope-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Email</strong>
-                            <a href="mailto:info@beautifulbeaches.pk">info@beautifulbeaches.pk</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="bi bi-geo-alt-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Location</strong>
-                            <span>Karachi, Pakistan</span>
-                        </div>
-                    </li>
-                </ul>
-                <a href="contact.html" class="footer-btn">Get in Touch</a>
-            </div>
+    <div class="feedbacks-display-container">
+        <div class="feedbacks-header">
+            <h2><i class="bi bi-chat-left-quote-fill"></i> Recent Feedbacks</h2>
+            <p>See what others are saying about their beach experiences</p>
         </div>
-
-        
-        <div class="footer-newsletter">
-            <div class="newsletter-container">
-                <div class="newsletter-content">
-                    <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
-                    <p class="newsletter-desc">Get updates about new beaches, travel tips, and exclusive offers!</p>
-                </div>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
-                    <button type="submit" class="newsletter-btn">Subscribe</button>
-                </form>
-            </div>
-        </div>
-
-        
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <p class="copyright">&copy; 2025 Beautiful Beaches. All Rights Reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <span class="separator">|</span>
-                    <a href="#">Terms of Service</a>
-                    <span class="separator">|</span>
-                    <a href="feedback.html">Feedback</a>
-                </div>
-            </div>
+        <div id="feedbacksList" class="feedbacks-list">
         </div>
     </div>
-</footer>
-    
-<script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3 class="footer-heading">About Beautiful Beaches</h3>
+                    <p class="footer-desc">Discover Pakistan's most stunning coastal destinations. From pristine beaches to hidden gems, explore the beauty of our shores.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="Index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about-us.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                        <li><a href="site-map.html"><i class="bi bi-chevron-right"></i> Site Map</a></li>
+                        <li><a href="queries.html"><i class="bi bi-chevron-right"></i> Queries</a></li>
+                        <li><a href="feedback.html"><i class="bi bi-chevron-right"></i> Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Explore Zones</h3>
+                    <ul class="footer-links">
+                        <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone</a></li>
+                        <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone</a></li>
+                        <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone</a></li>
+                        <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone</a></li>
+                        <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-telephone-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Phone</strong>
+                                <a href="#">(+92) 323-12345</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Email</strong>
+                                <a href="#">info@beautifulbeaches.pk</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Location</strong>
+                                <span>Karachi, Pakistan</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="footer-btn">Get in Touch</a>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
+                        <p class="newsletter-desc">Get updates about new beaches, travel tips, and exclusive offers!</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 Beautiful Beaches. All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <span class="separator">|</span>
+                        <a href="#">Terms of Service</a>
+                        <span class="separator">|</span>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+var selectedRating = 0;
+var feedbacks = [];
+
+
 function downloadPDF() {
     var link = document.createElement('a');
     link.href = './Assets/PDF/BeautifulBeachesSRS.pdf';
@@ -317,86 +345,191 @@ function downloadPDF() {
     document.body.removeChild(link);
 }
 
-
-var selectedRating = 0;
-
-
 function clickStar(starNumber) {
-
     selectedRating = starNumber;
     document.getElementById('rating').value = starNumber;
-
     makeStarsGold(starNumber);
 }
 
 function hoverStar(starNumber) {
- 
     makeStarsGold(starNumber);
 }
 
 function leaveStar() {
-    
     makeStarsGold(selectedRating);
 }
 
-
 function makeStarsGold(number) {
-      var star1 = document.getElementById('star1');
-  
-    var star2 = document.getElementById('star2');
-  
-    var star3 = document.getElementById('star3');
-  
-    var star4 = document.getElementById('star4');
-  
-    var star5 = document.getElementById('star5');
+    var stars = ['star1', 'star2', 'star3', 'star4', 'star5'];
     
- 
-    star1.classList.remove('active');
-    star2.classList.remove('active');
-    star3.classList.remove('active');
-    star4.classList.remove('active');
-    star5.classList.remove('active');
+    stars.forEach(function(starId, index) {
+        var star = document.getElementById(starId);
+        if (index < number) {
+            star.classList.add('active');
+        } else {
+            star.classList.remove('active');
+        }
+    });
+}
+
+function getEnjoyedItems() {
+    var enjoyed = [];
+    var checkboxes = document.querySelectorAll('input[name="enjoyed"]:checked');
+    checkboxes.forEach(function(checkbox) {
+        enjoyed.push(checkbox.value);
+    });
+    return enjoyed;
+}
+
+function formatDate(date) {
+    var d = new Date(date);
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+}
+
+function getBeachName(value) {
+    var beachNames = {
+        'north': 'North Zone Beach',
+        'south': 'South Zone Beach',
+        'east': 'East Zone Beach',
+        'west': 'West Zone Beach',
+        'other': 'Other Beach'
+    };
+    return beachNames[value] || value;
+}
+
+function displayFeedbacks() {
+    var feedbacksList = document.getElementById('feedbacksList');
     
- 
-    if (number >= 1) {
-        star1.classList.add('active');
+    if (feedbacks.length === 0) {
+        feedbacksList.innerHTML = `
+            <div class="no-feedbacks">
+                <i class="bi bi-chat-left-text"></i>
+                <p>No feedbacks yet. Be the first to share your experience!</p>
+            </div>
+        `;
+        return;
     }
-    if (number >= 2) {
-        star2.classList.add('active');
-    }
-    if (number >= 3) {
-        star3.classList.add('active');
-    }
-    if (number >= 4) {
-        star4.classList.add('active');
-    }
-    if (number >= 5) {
-        star5.classList.add('active');
+    
+    feedbacksList.innerHTML = '';
+    
+    for (var i = feedbacks.length - 1; i >= 0; i--) {
+        var feedback = feedbacks[i];
+        var feedbackCard = createFeedbackCard(feedback);
+        feedbacksList.innerHTML += feedbackCard;
     }
 }
 
+function createFeedbackCard(feedback) {
+    var initials = feedback.firstName.charAt(0) + feedback.lastName.charAt(0);
+    var stars = '';
+    
+    for (var i = 0; i < 5; i++) {
+        if (i < feedback.rating) {
+            stars += '<span class="star">★</span>';
+        } else {
+            stars += '<span class="star" style="color:#ddd">★</span>';
+        }
+    }
+    
+    var enjoyedTags = '';
+    if (feedback.enjoyed && feedback.enjoyed.length > 0) {
+        feedback.enjoyed.forEach(function(item) {
+            enjoyedTags += '<span class="meta-tag"><i class="bi bi-heart-fill"></i>' + item + '</span>';
+        });
+    }
+    
+    var frequencyTag = '';
+    if (feedback.frequency) {
+        frequencyTag = '<span class="meta-tag"><i class="bi bi-calendar-check"></i>' + feedback.frequency + '</span>';
+    }
+    
+    var recommendTag = '';
+    if (feedback.recommend) {
+        recommendTag = '<span class="meta-tag"><i class="bi bi-hand-thumbs-up"></i>' + feedback.recommend + '</span>';
+    }
+    
+    return `
+        <div class="feedback-item">
+            <div class="feedback-header-info">
+                <div class="feedback-user">
+                    <div class="user-avatar">${initials}</div>
+                    <div class="user-details">
+                        <h4>${feedback.firstName} ${feedback.lastName}</h4>
+                        <span class="feedback-date">${formatDate(feedback.date)}</span>
+                    </div>
+                </div>
+                <div class="feedback-rating">
+                    ${stars}
+                </div>
+            </div>
+            
+            <div class="feedback-beach">
+                <i class="bi bi-geo-alt-fill"></i>${getBeachName(feedback.beach)}
+            </div>
+            
+            ${feedback.comments ? '<div class="feedback-comments">"' + feedback.comments + '"</div>' : ''}
+            
+            <div class="feedback-meta">
+                ${enjoyedTags}
+                ${frequencyTag}
+                ${recommendTag}
+            </div>
+        </div>
+    `;
+}
+
+function loadFeedbacks() {
+    var stored = localStorage.getItem('beachFeedbacks');
+    if (stored) {
+        feedbacks = JSON.parse(stored);
+    }
+    displayFeedbacks();
+}
+
+function saveFeedbacks() {
+    localStorage.setItem('beachFeedbacks', JSON.stringify(feedbacks));
+}
 
 function submitForm() {
-    
     var ratingValue = document.getElementById('rating').value;
     
-    
-    if (ratingValue == '') {
+    if (ratingValue === '') {
         alert('Please select a rating!');
         return false;
     }
     
-   var successMessage = document.getElementById('successMessage');
+    var feedback = {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        rating: parseInt(ratingValue),
+        beach: document.getElementById('beach').value,
+        frequency: document.querySelector('input[name="frequency"]:checked')?.value || '',
+        enjoyed: getEnjoyedItems(),
+        comments: document.getElementById('comments').value,
+        recommend: document.querySelector('input[name="recommend"]:checked')?.value || '',
+        date: new Date().toISOString()
+    };
     
+    feedbacks.push(feedback);
+    
+    saveFeedbacks();
+    
+    displayFeedbacks();
+    
+    var successMessage = document.getElementById('successMessage');
     successMessage.style.display = 'block';
-    
     
     document.getElementById('feedbackForm').reset();
     selectedRating = 0;
     makeStarsGold(0);
     
-    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    document.querySelector('.feedbacks-display-container').scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+    });
     
     setTimeout(function() {
         successMessage.style.display = 'none';
@@ -404,6 +537,10 @@ function submitForm() {
     
     return false;
 }
-</script>
+
+window.onload = function() {
+    loadFeedbacks();
+};
+    </script>
 </body>
 </html>

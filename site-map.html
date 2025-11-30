@@ -8,47 +8,86 @@
     <link rel="stylesheet" href="site-map.css">
 </head>
 <body>
-    <header class="header">
-        <div class="info">
-            <span class="phone"><i class="bi bi-telephone-fill"></i> (+92) 323-12345</span>
+          <header class="main-header">
+        <div class="brand-logo">
+            <img src="./Assets/Images/logo/logo.png" alt="Beautiful Beaches">
+            <span class="brand-text">Beautiful Beaches</span>
         </div>
-
-        <div class="logo">
-            <a href="Index.html"><img src="./Assets/Images/logo/1.png" alt="Beatiful Beaches"></a>
+        
+        <div class="header-search">
+            <input type="text" placeholder="Search beaches..." class="search-input" id="searchInput">
+            <i class="bi bi-search search-icon"></i>
         </div>
-
-        <div class="icons">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-youtube"></i></a>
-            <a href=""><i class="bi bi-tiktok"></i></a>
+        
+        <div class="header-actions">
+            <button class="action-btn" onclick="downloadPDF()">
+                <i class="bi bi-download"></i>
+                <span>Download PDF</span>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
     </header>
 
-    <nav class="navbar">
-        <ul class="navlinks">
-            <li><a href="Index.html">HOME</a></li>
-            <li class="dropdown">
-                <a href="zone.html">ZONE <i class="bi bi-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="north.html">NORTH</a></li>
-                    <li><a href="south.html">SOUTH</a></li>
-                    <li><a href="east.html">EAST</a></li>
-                    <li><a href="west.html">WEST</a></li>
-                </ul>
-            </li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="feedback.html">FEEDBACK</a></li>
-            <li><a href="site-map.html">SITE MAP</a></li>
-            <li><a href="about-us.html">ABOUT US</a></li>
-            <li><a href="queries.html">QUERIES</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <button>DOWNLOAD PDF</button>
-        </ul>
+    <!-- Enhanced Navigation -->
+    <nav class="navigation-menu" id="navigationMenu">
+        <a href="Index.html" class="nav-link">
+            <i class="bi bi-house-door-fill"></i>
+            HOME
+        </a>
+        
+        <div class="nav-dropdown">
+            <a href="zone.html" class="nav-link">
+                <i class="bi bi-compass-fill"></i>
+                ZONE
+                <i class="bi bi-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu">
+                <a href="north.html" class="dropdown-link">
+                    <i class="bi bi-arrow-up-circle-fill"></i>
+                    NORTH ZONE
+                </a>
+                <a href="south.html" class="dropdown-link">
+                    <i class="bi bi-arrow-down-circle-fill"></i>
+                    SOUTH ZONE
+                </a>
+                <a href="east.html" class="dropdown-link">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                    EAST ZONE
+                </a>
+                <a href="west.html" class="dropdown-link">
+                    <i class="bi bi-arrow-left-circle-fill"></i>
+                    WEST ZONE
+                </a>
+            </div>
+        </div>
+        
+        <a href="gallery.html" class="nav-link">
+            <i class="bi bi-images"></i>
+            GALLERY
+        </a>
+        <a href="feedback.html" class="nav-link">
+            <i class="bi bi-chat-square-text-fill"></i>
+            FEEDBACK
+        </a>
+        <a href="site-map.html" class="nav-link active">
+            <i class="bi bi-diagram-3-fill"></i>
+            SITE MAP
+        </a>
+        <a href="about-us.html" class="nav-link">
+            <i class="bi bi-info-circle-fill"></i>
+            ABOUT US
+        </a>
+        <a href="queries.html" class="nav-link">
+            <i class="bi bi-question-circle-fill"></i>
+            QUERIES
+        </a>
+        <a href="contact.html" class="nav-link">
+            <i class="bi bi-telephone-fill"></i>
+            CONTACT
+        </a>
     </nav>
-
-
-    
 
 
 
