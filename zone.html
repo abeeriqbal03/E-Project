@@ -3,91 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beautiful Beaches - Explore World's Most Stunning Coastal Destinations</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="north.css">
+    <link rel="stylesheet" href="zone.css">
 </head>
 <body>
-          <header class="main-header">
+    
+    <header class="main-header">
         <div class="brand-logo">
             <img src="./Assets/Images/logo/logo.png" alt="Beautiful Beaches">
             <span class="brand-text">Beautiful Beaches</span>
         </div>
         
-        <div class="header-search">
-            <input type="text" placeholder="Search beaches..." class="search-input" id="searchInput">
-            <i class="bi bi-search search-icon"></i>
-        </div>
-        
-        <div class="header-actions">
-            <button class="action-btn" onclick="downloadPDF()">
-                <i class="bi bi-download"></i>
-                <span>Download PDF</span>
-            </button>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                <i class="bi bi-list"></i>
-            </button>
-        </div>
-    </header>
-
-    <!-- Enhanced Navigation -->
-    <nav class="navigation-menu" id="navigationMenu">
-        <a href="Index.html" class="nav-link active">
-            <i class="bi bi-house-door-fill"></i>
-            HOME
-        </a>
-        
-        <div class="nav-dropdown">
-            <a href="zone.html" class="nav-link">
-                <i class="bi bi-compass-fill"></i>
-                ZONE
-                <i class="bi bi-chevron-down dropdown-arrow"></i>
+        <nav class="navigation-menu" id="navigationMenu">
+            <a href="Index.html" class="nav-link">
+                <i class="bi bi-house-door-fill"></i>
+                HOME
             </a>
-            <div class="dropdown-menu">
-                <a href="north.html" class="dropdown-link">
-                    <i class="bi bi-arrow-up-circle-fill"></i>
-                    NORTH ZONE
+            
+            <div class="nav-dropdown">
+                <a href="zone.html" class="nav-link active">
+                    <i class="bi bi-compass-fill"></i>
+                    ZONE
+                    <i class="bi bi-chevron-down dropdown-arrow"></i>
                 </a>
-                <a href="south.html" class="dropdown-link">
-                    <i class="bi bi-arrow-down-circle-fill"></i>
-                    SOUTH ZONE
-                </a>
-                <a href="east.html" class="dropdown-link">
-                    <i class="bi bi-arrow-right-circle-fill"></i>
-                    EAST ZONE
-                </a>
-                <a href="west.html" class="dropdown-link">
-                    <i class="bi bi-arrow-left-circle-fill"></i>
-                    WEST ZONE
-                </a>
+                <div class="dropdown-menu">
+                    <a href="north.html" class="dropdown-link">
+                        <i class="bi bi-arrow-up-circle-fill"></i>
+                        NORTH ZONE
+                    </a>
+                    <a href="south.html" class="dropdown-link">
+                        <i class="bi bi-arrow-down-circle-fill"></i>
+                        SOUTH ZONE
+                    </a>
+                    <a href="east.html" class="dropdown-link">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                        EAST ZONE
+                    </a>
+                    <a href="west.html" class="dropdown-link">
+                        <i class="bi bi-arrow-left-circle-fill"></i>
+                        WEST ZONE
+                    </a>
+                </div>
             </div>
-        </div>
+            
+            <a href="gallery.html" class="nav-link">
+                <i class="bi bi-images"></i>
+                GALLERY
+            </a>
+            <a href="feedback.html" class="nav-link">
+                <i class="bi bi-chat-square-text-fill"></i>
+                FEEDBACK
+            </a>
+            <a href="site-map.html" class="nav-link">
+                <i class="bi bi-diagram-3-fill"></i>
+                SITE MAP
+            </a>
+            <a href="about-us.html" class="nav-link">
+                <i class="bi bi-info-circle-fill"></i>
+                ABOUT US
+            </a>
+            <a href="queries.html" class="nav-link">
+                <i class="bi bi-question-circle-fill"></i>
+                QUERIES
+            </a>
+            <a href="contact.html" class="nav-link">
+                <i class="bi bi-telephone-fill"></i>
+                CONTACT
+            </a>
+        </nav>
         
-        <a href="gallery.html" class="nav-link">
-            <i class="bi bi-images"></i>
-            GALLERY
-        </a>
-        <a href="feedback.html" class="nav-link">
-            <i class="bi bi-chat-square-text-fill"></i>
-            FEEDBACK
-        </a>
-        <a href="site-map.html" class="nav-link">
-            <i class="bi bi-diagram-3-fill"></i>
-            SITE MAP
-        </a>
-        <a href="about-us.html" class="nav-link">
-            <i class="bi bi-info-circle-fill"></i>
-            ABOUT US
-        </a>
-        <a href="queries.html" class="nav-link">
-            <i class="bi bi-question-circle-fill"></i>
-            QUERIES
-        </a>
-        <a href="contact.html" class="nav-link">
-            <i class="bi bi-telephone-fill"></i>
-            CONTACT
-        </a>
-    </nav>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
 
 <section class="page-title">
     <h1>Featured Beaches Around the North Zone</h1>

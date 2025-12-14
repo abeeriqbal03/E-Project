@@ -3,225 +3,510 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beautiful Beaches - Explore World's Most Stunning Coastal Destinations</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="site-map.css">
 </head>
 <body>
-          <header class="main-header">
+    
+    <header class="main-header">
         <div class="brand-logo">
             <img src="./Assets/Images/logo/logo.png" alt="Beautiful Beaches">
             <span class="brand-text">Beautiful Beaches</span>
         </div>
         
-        <div class="header-search">
-            <input type="text" placeholder="Search beaches..." class="search-input" id="searchInput">
-            <i class="bi bi-search search-icon"></i>
-        </div>
+        <nav class="navigation-menu" id="navigationMenu">
+            <a href="Index.html" class="nav-link">
+                <i class="bi bi-house-door-fill"></i>
+                HOME
+            </a>
+            
+            <div class="nav-dropdown">
+                <a href="zone.html" class="nav-link">
+                    <i class="bi bi-compass-fill"></i>
+                    ZONE
+                    <i class="bi bi-chevron-down dropdown-arrow"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="north.html" class="dropdown-link">
+                        <i class="bi bi-arrow-up-circle-fill"></i>
+                        NORTH ZONE
+                    </a>
+                    <a href="south.html" class="dropdown-link">
+                        <i class="bi bi-arrow-down-circle-fill"></i>
+                        SOUTH ZONE
+                    </a>
+                    <a href="east.html" class="dropdown-link">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                        EAST ZONE
+                    </a>
+                    <a href="west.html" class="dropdown-link">
+                        <i class="bi bi-arrow-left-circle-fill"></i>
+                        WEST ZONE
+                    </a>
+                </div>
+            </div>
+            
+            <a href="gallery.html" class="nav-link">
+                <i class="bi bi-images"></i>
+                GALLERY
+            </a>
+            <a href="feedback.html" class="nav-link">
+                <i class="bi bi-chat-square-text-fill"></i>
+                FEEDBACK
+            </a>
+            <a href="site-map.html" class="nav-link active">
+                <i class="bi bi-diagram-3-fill"></i>
+                SITE MAP
+            </a>
+            <a href="about-us.html" class="nav-link">
+                <i class="bi bi-info-circle-fill"></i>
+                ABOUT US
+            </a>
+            <a href="queries.html" class="nav-link">
+                <i class="bi bi-question-circle-fill"></i>
+                QUERIES
+            </a>
+            <a href="contact.html" class="nav-link">
+                <i class="bi bi-telephone-fill"></i>
+                CONTACT
+            </a>
+        </nav>
         
-        <div class="header-actions">
-            <button class="action-btn" onclick="downloadPDF()">
-                <i class="bi bi-download"></i>
-                <span>Download PDF</span>
-            </button>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                <i class="bi bi-list"></i>
-            </button>
-        </div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="bi bi-list"></i>
+        </button>
     </header>
 
-    <!-- Enhanced Navigation -->
-    <nav class="navigation-menu" id="navigationMenu">
-        <a href="Index.html" class="nav-link">
-            <i class="bi bi-house-door-fill"></i>
-            HOME
-        </a>
-        
-        <div class="nav-dropdown">
-            <a href="zone.html" class="nav-link">
-                <i class="bi bi-compass-fill"></i>
-                ZONE
-                <i class="bi bi-chevron-down dropdown-arrow"></i>
-            </a>
-            <div class="dropdown-menu">
-                <a href="north.html" class="dropdown-link">
-                    <i class="bi bi-arrow-up-circle-fill"></i>
-                    NORTH ZONE
-                </a>
-                <a href="south.html" class="dropdown-link">
-                    <i class="bi bi-arrow-down-circle-fill"></i>
-                    SOUTH ZONE
-                </a>
-                <a href="east.html" class="dropdown-link">
-                    <i class="bi bi-arrow-right-circle-fill"></i>
-                    EAST ZONE
-                </a>
-                <a href="west.html" class="dropdown-link">
-                    <i class="bi bi-arrow-left-circle-fill"></i>
-                    WEST ZONE
-                </a>
-            </div>
+    <section class="sitemap-hero">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
         </div>
-        
-        <a href="gallery.html" class="nav-link">
-            <i class="bi bi-images"></i>
-            GALLERY
-        </a>
-        <a href="feedback.html" class="nav-link">
-            <i class="bi bi-chat-square-text-fill"></i>
-            FEEDBACK
-        </a>
-        <a href="site-map.html" class="nav-link active">
-            <i class="bi bi-diagram-3-fill"></i>
-            SITE MAP
-        </a>
-        <a href="about-us.html" class="nav-link">
-            <i class="bi bi-info-circle-fill"></i>
-            ABOUT US
-        </a>
-        <a href="queries.html" class="nav-link">
-            <i class="bi bi-question-circle-fill"></i>
-            QUERIES
-        </a>
-        <a href="contact.html" class="nav-link">
-            <i class="bi bi-telephone-fill"></i>
-            CONTACT
-        </a>
-    </nav>
+        <div class="hero-content">
+            <div class="hero-icon">
+                <i class="bi bi-diagram-3-fill"></i>
+            </div>
+            <h1>Site Map</h1>
+            <p>Easy navigation to all pages and resources on Beautiful Beaches</p>
+        </div>
+    </section>
 
 
 
 
+    <section class="sitemap-content">
+        <div class="container">
+            <div class="sitemap-intro">
+                <h2>Website Structure</h2>
+                <p>Browse through our complete website structure to find exactly what you're looking for</p>
+            </div>
+
+            <div class="sitemap-grid">
+
+                <div class="sitemap-section">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <i class="bi bi-house-door-fill"></i>
+                        </div>
+                        <h3>Main Pages</h3>
+                    </div>
+                    <ul class="page-list">
+                        <li>
+                            <a href="Index.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>Home</span>
+                            </a>
+                            <span class="page-desc">Welcome & Featured Beaches</span>
+                        </li>
+                        <li>
+                            <a href="about-us.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>About Us</span>
+                            </a>
+                            <span class="page-desc">Our Story & Team</span>
+                        </li>
+                        <li>
+                            <a href="gallery.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>Gallery</span>
+                            </a>
+                            <span class="page-desc">Beach Photos & Videos</span>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>Contact</span>
+                            </a>
+                            <span class="page-desc">Get in Touch</span>
+                        </li>
+                    </ul>
+                </div>
 
 
-    
-<footer class="footer">
-    
-    <div class="footer-content">
-        <div class="footer-container">
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    About Beautiful Beaches
-                </h3>
-                <p class="footer-desc">Discover Pakistan's most stunning coastal destinations. From pristine beaches to hidden gems, explore the beauty of our shores.</p>
-                <div class="footer-social">
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
+                <div class="sitemap-section">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <i class="bi bi-compass-fill"></i>
+                        </div>
+                        <h3>Beach Zones</h3>
+                    </div>
+                    <ul class="page-list">
+                        <li>
+                            <a href="zone.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>All Zones</span>
+                            </a>
+                            <span class="page-desc">Overview of All Zones</span>
+                        </li>
+                        <li>
+                            <a href="north.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>North Zone</span>
+                            </a>
+                            <span class="page-desc">20+ Beaches</span>
+                        </li>
+                        <li>
+                            <a href="south.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>South Zone</span>
+                            </a>
+                            <span class="page-desc">18+ Beaches</span>
+                        </li>
+                        <li>
+                            <a href="east.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>East Zone</span>
+                            </a>
+                            <span class="page-desc">17+ Beaches</span>
+                        </li>
+                        <li>
+                            <a href="west.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>West Zone</span>
+                            </a>
+                            <span class="page-desc">17+ Beaches</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="sitemap-section">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3>User Interaction</h3>
+                    </div>
+                    <ul class="page-list">
+                        <li>
+                            <a href="feedback.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>Feedback</span>
+                            </a>
+                            <span class="page-desc">Share Your Experience</span>
+                        </li>
+                        <li>
+                            <a href="queries.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>Queries & FAQ</span>
+                            </a>
+                            <span class="page-desc">Ask Questions</span>
+                        </li>
+                        <li>
+                            <a href="site-map.html">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>Site Map</span>
+                            </a>
+                            <span class="page-desc">Website Navigation</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="sitemap-section">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <i class="bi bi-file-earmark-text-fill"></i>
+                        </div>
+                        <h3>Resources</h3>
+                    </div>
+                    <ul class="page-list">
+                        <li>
+                            <a href="#" onclick="downloadPDF(); return false;">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>Download PDF Guide</span>
+                            </a>
+                            <span class="page-desc">Complete Beach Guide</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>Travel Tips</span>
+                            </a>
+                            <span class="page-desc">Essential Information</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                <span>Safety Guidelines</span>
+                            </a>
+                            <span class="page-desc">Beach Safety</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    Quick Links
-                </h3>
-                <ul class="footer-links">
-                    <li><a href="Index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
-                    <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
-                    <li><a href="about-us.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
-                    <li><a href="site-map.html"><i class="bi bi-chevron-right"></i> Site Map</a></li>
-                    <li><a href="queries.html"><i class="bi bi-chevron-right"></i> Queries</a></li>
-                    <li><a href="feedback.html"><i class="bi bi-chevron-right"></i> Feedback</a></li>
-                </ul>
-            </div>
 
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    Explore Zones
-                </h3>
-                <ul class="footer-links">
-                    <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone</a></li>
-                    <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone</a></li>
-                    <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone</a></li>
-                    <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone</a></li>
-                    <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
-                </ul>
-            </div>
-
-                        <div class="footer-col">
-                <h3 class="footer-heading">
-                    Contact Us
-                </h3>
-                <ul class="footer-contact">
-                    <li>
-                        <i class="bi bi-telephone-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Phone</strong>
-                            <a href="tel:+923231234567">(+92) 323-12345</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="bi bi-envelope-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Email</strong>
-                            <a href="mailto:info@beautifulbeaches.pk">info@beautifulbeaches.pk</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="bi bi-geo-alt-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Location</strong>
-                            <span>Karachi, Pakistan</span>
-                        </div>
-                    </li>
-                </ul>
-                <a href="contact.html" class="footer-btn">Get in Touch</a>
-            </div>
-        </div>
-
-        
-        <div class="footer-newsletter">
-            <div class="newsletter-container">
-                <div class="newsletter-content">
-                    <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
-                    <p class="newsletter-desc">Get updates about new beaches, travel tips, and exclusive offers!</p>
+            <div class="featured-beaches-section">
+                <div class="section-title">
+                    <h2>Featured Beaches by Zone</h2>
+                    <p>Quick access to our most popular beach destinations</p>
                 </div>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
-                    <button type="submit" class="newsletter-btn">Subscribe</button>
-                </form>
-            </div>
-        </div>
 
-        
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <p class="copyright">&copy; 2025 Beautiful Beaches. All Rights Reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <span class="separator">|</span>
-                    <a href="#">Terms of Service</a>
-                    <span class="separator">|</span>
-                    <a href="feedback.html">Feedback</a>
+                <div class="beaches-grid">
+                    <div class="beach-zone-card">
+                        <div class="zone-header">
+                            <div class="zone-icon north">
+                                <i class="bi bi-arrow-up-circle-fill"></i>
+                            </div>
+                            <h3>North Zone</h3>
+                            <span class="beach-count">20+ Beaches</span>
+                        </div>
+                        <ul class="beach-list">
+                            <li><a href="north.html"><i class="bi bi-geo-alt-fill"></i> Waikiki Beach - Hawaii</a></li>
+                            <li><a href="north.html"><i class="bi bi-geo-alt-fill"></i> Miami Beach - Florida</a></li>
+                            <li><a href="north.html"><i class="bi bi-geo-alt-fill"></i> Cancun Beach - Mexico</a></li>
+                            <li><a href="north.html"><i class="bi bi-geo-alt-fill"></i> Navagio Beach - Greece</a></li>
+                            <li><a href="north.html"><i class="bi bi-geo-alt-fill"></i> Nice Beach - France</a></li>
+                            <li><a href="north.html" class="view-all">View All North Zone Beaches →</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="beach-zone-card">
+                        <div class="zone-header">
+                            <div class="zone-icon south">
+                                <i class="bi bi-arrow-down-circle-fill"></i>
+                            </div>
+                            <h3>South Zone</h3>
+                            <span class="beach-count">18+ Beaches</span>
+                        </div>
+                        <ul class="beach-list">
+                            <li><a href="south.html"><i class="bi bi-geo-alt-fill"></i> Bondi Beach - Australia</a></li>
+                            <li><a href="south.html"><i class="bi bi-geo-alt-fill"></i> Whitehaven Beach - Australia</a></li>
+                            <li><a href="south.html"><i class="bi bi-geo-alt-fill"></i> Copacabana - Brazil</a></li>
+                            <li><a href="south.html"><i class="bi bi-geo-alt-fill"></i> Ipanema Beach - Brazil</a></li>
+                            <li><a href="south.html"><i class="bi bi-geo-alt-fill"></i> Seychelles Beaches</a></li>
+                            <li><a href="south.html" class="view-all">View All South Zone Beaches →</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="beach-zone-card">
+                        <div class="zone-header">
+                            <div class="zone-icon east">
+                                <i class="bi bi-arrow-right-circle-fill"></i>
+                            </div>
+                            <h3>East Zone</h3>
+                            <span class="beach-count">17+ Beaches</span>
+                        </div>
+                        <ul class="beach-list">
+                            <li><a href="east.html"><i class="bi bi-geo-alt-fill"></i> White Beach - Boracay</a></li>
+                            <li><a href="east.html"><i class="bi bi-geo-alt-fill"></i> Maya Bay - Thailand</a></li>
+                            <li><a href="east.html"><i class="bi bi-geo-alt-fill"></i> Bali Beaches - Indonesia</a></li>
+                            <li><a href="east.html"><i class="bi bi-geo-alt-fill"></i> Phuket - Thailand</a></li>
+                            <li><a href="east.html"><i class="bi bi-geo-alt-fill"></i> Nha Trang - Vietnam</a></li>
+                            <li><a href="east.html" class="view-all">View All East Zone Beaches →</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="beach-zone-card">
+                        <div class="zone-header">
+                            <div class="zone-icon west">
+                                <i class="bi bi-arrow-left-circle-fill"></i>
+                            </div>
+                            <h3>West Zone</h3>
+                            <span class="beach-count">17+ Beaches</span>
+                        </div>
+                        <ul class="beach-list">
+                            <li><a href="west.html"><i class="bi bi-geo-alt-fill"></i> Venice Beach - California</a></li>
+                            <li><a href="west.html"><i class="bi bi-geo-alt-fill"></i> Malibu Beach - USA</a></li>
+                            <li><a href="west.html"><i class="bi bi-geo-alt-fill"></i> Tulum Beach - Mexico</a></li>
+                            <li><a href="west.html"><i class="bi bi-geo-alt-fill"></i> Punta Cana - Dominican</a></li>
+                            <li><a href="west.html"><i class="bi bi-geo-alt-fill"></i> Seven Mile Beach - Jamaica</a></li>
+                            <li><a href="west.html" class="view-all">View All West Zone Beaches →</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+
+            <div class="sitemap-stats">
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="bi bi-file-earmark-text"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h4>10+</h4>
+                        <p>Total Pages</p>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h4>72+</h4>
+                        <p>Beach Destinations</p>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="bi bi-compass-fill"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h4>4</h4>
+                        <p>Global Zones</p>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h4>100%</h4>
+                        <p>Verified Info</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
-    
-<script>
-function downloadPDF() {
-    const link = document.createElement('a');
-    link.href = './Assets/PDF/BeautifulBeachesSRS.pdf';
-    link.download = 'BeautifulBeachesSRS.pdf';
-    link.target = '_blank';
-    
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-</script>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Help Finding Something?</h2>
+                <p>Can't find what you're looking for? Contact us and we'll help you out!</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-btn primary">
+                        <i class="bi bi-envelope-fill"></i>
+                        Contact Us
+                    </a>
+                    <a href="queries.html" class="cta-btn secondary">
+                        <i class="bi bi-question-circle-fill"></i>
+                        View FAQ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3 class="footer-heading">About Beautiful Beaches</h3>
+                    <p class="footer-desc">Discover world's most stunning coastal destinations. From pristine beaches to hidden gems, explore the beauty of our shores.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="Index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about-us.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                        <li><a href="site-map.html"><i class="bi bi-chevron-right"></i> Site Map</a></li>
+                        <li><a href="queries.html"><i class="bi bi-chevron-right"></i> Queries</a></li>
+                        <li><a href="feedback.html"><i class="bi bi-chevron-right"></i> Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Explore Zones</h3>
+                    <ul class="footer-links">
+                        <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone</a></li>
+                        <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone</a></li>
+                        <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone</a></li>
+                        <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone</a></li>
+                        <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-telephone-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Phone</strong>
+                                <a href="tel:+18001234567">+1 (800) 123-4567</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Email</strong>
+                                <a href="mailto:info@beautifulbeaches.com">info@beautifulbeaches.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Location</strong>
+                                <span>Worldwide</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="footer-btn">Get in Touch</a>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
+                        <p class="newsletter-desc">Get updates about new beaches, travel tips, and exclusive offers!</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 Beautiful Beaches. All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <span class="separator">|</span>
+                        <a href="#">Terms of Service</a>
+                        <span class="separator">|</span>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function downloadPDF() {
+        const link = document.createElement('a');
+        link.href = './Assets/PDF/BeautifulBeachesSRS.pdf';
+        link.download = 'BeautifulBeachesSRS.pdf';
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+    </script>
 </body>
-</html>
+</html> 

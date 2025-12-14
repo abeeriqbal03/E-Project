@@ -3,91 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>North Zone - Beautiful Beaches</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="north.css">
 </head>
 <body>
-          <header class="main-header">
+    
+    <header class="main-header">
         <div class="brand-logo">
             <img src="./Assets/Images/logo/logo.png" alt="Beautiful Beaches">
             <span class="brand-text">Beautiful Beaches</span>
         </div>
         
-        <div class="header-search">
-            <input type="text" placeholder="Search beaches..." class="search-input" id="searchInput">
-            <i class="bi bi-search search-icon"></i>
-        </div>
-        
-        <div class="header-actions">
-            <button class="action-btn" onclick="downloadPDF()">
-                <i class="bi bi-download"></i>
-                <span>Download PDF</span>
-            </button>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                <i class="bi bi-list"></i>
-            </button>
-        </div>
-    </header>
-
-    <!-- Enhanced Navigation -->
-    <nav class="navigation-menu" id="navigationMenu">
-        <a href="Index.html" class="nav-link active">
-            <i class="bi bi-house-door-fill"></i>
-            HOME
-        </a>
-        
-        <div class="nav-dropdown">
-            <a href="zone.html" class="nav-link">
-                <i class="bi bi-compass-fill"></i>
-                ZONE
-                <i class="bi bi-chevron-down dropdown-arrow"></i>
+        <nav class="navigation-menu" id="navigationMenu">
+            <a href="Index.html" class="nav-link">
+                <i class="bi bi-house-door-fill"></i>
+                HOME
             </a>
-            <div class="dropdown-menu">
-                <a href="north.html" class="dropdown-link">
-                    <i class="bi bi-arrow-up-circle-fill"></i>
-                    NORTH ZONE
+            
+            <div class="nav-dropdown">
+                <a href="zone.html" class="nav-link active">
+                    <i class="bi bi-compass-fill"></i>
+                    ZONE
+                    <i class="bi bi-chevron-down dropdown-arrow"></i>
                 </a>
-                <a href="south.html" class="dropdown-link">
-                    <i class="bi bi-arrow-down-circle-fill"></i>
-                    SOUTH ZONE
-                </a>
-                <a href="east.html" class="dropdown-link">
-                    <i class="bi bi-arrow-right-circle-fill"></i>
-                    EAST ZONE
-                </a>
-                <a href="west.html" class="dropdown-link">
-                    <i class="bi bi-arrow-left-circle-fill"></i>
-                    WEST ZONE
-                </a>
+                <div class="dropdown-menu">
+                    <a href="north.html" class="dropdown-link">
+                        <i class="bi bi-arrow-up-circle-fill"></i>
+                        NORTH ZONE
+                    </a>
+                    <a href="south.html" class="dropdown-link">
+                        <i class="bi bi-arrow-down-circle-fill"></i>
+                        SOUTH ZONE
+                    </a>
+                    <a href="east.html" class="dropdown-link">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                        EAST ZONE
+                    </a>
+                    <a href="west.html" class="dropdown-link">
+                        <i class="bi bi-arrow-left-circle-fill"></i>
+                        WEST ZONE
+                    </a>
+                </div>
             </div>
-        </div>
+            
+            <a href="gallery.html" class="nav-link">
+                <i class="bi bi-images"></i>
+                GALLERY
+            </a>
+            <a href="feedback.html" class="nav-link">
+                <i class="bi bi-chat-square-text-fill"></i>
+                FEEDBACK
+            </a>
+            <a href="site-map.html" class="nav-link">
+                <i class="bi bi-diagram-3-fill"></i>
+                SITE MAP
+            </a>
+            <a href="about-us.html" class="nav-link">
+                <i class="bi bi-info-circle-fill"></i>
+                ABOUT US
+            </a>
+            <a href="queries.html" class="nav-link">
+                <i class="bi bi-question-circle-fill"></i>
+                QUERIES
+            </a>
+            <a href="contact.html" class="nav-link">
+                <i class="bi bi-telephone-fill"></i>
+                CONTACT
+            </a>
+        </nav>
         
-        <a href="gallery.html" class="nav-link">
-            <i class="bi bi-images"></i>
-            GALLERY
-        </a>
-        <a href="feedback.html" class="nav-link">
-            <i class="bi bi-chat-square-text-fill"></i>
-            FEEDBACK
-        </a>
-        <a href="site-map.html" class="nav-link">
-            <i class="bi bi-diagram-3-fill"></i>
-            SITE MAP
-        </a>
-        <a href="about-us.html" class="nav-link">
-            <i class="bi bi-info-circle-fill"></i>
-            ABOUT US
-        </a>
-        <a href="queries.html" class="nav-link">
-            <i class="bi bi-question-circle-fill"></i>
-            QUERIES
-        </a>
-        <a href="contact.html" class="nav-link">
-            <i class="bi bi-telephone-fill"></i>
-            CONTACT
-        </a>
-    </nav>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
 
 <section class="page-title">
     <h1>Featured Beaches Around the North Zone</h1>
@@ -100,37 +90,52 @@
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Waikiki Beach.png" alt="Waikiki Beach">
             <div class="destination-info">
-                <h3>Waikiki Beach - USA</h3>
-                <p>Experience the iconic shores of Waikiki Beach in Hawaii — where golden sands meet crystal-clear waters, perfect for surfing and unforgettable sunsets.</p>
+                <h3>Waikiki Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Hawaii, USA</p>
+                <p class="description">Experience the iconic shores of Waikiki Beach in Hawaii — where golden sands meet crystal-clear waters, perfect for surfing and unforgettable sunsets.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Miami Beach.png" alt="Miami Beach">
             <div class="destination-info">
-                <h3>Miami Beach - USA</h3>
-                <p>Dive into the vibrant energy of Miami Beach, Florida — where Art Deco architecture meets turquoise waters and world-class nightlife.</p>
+                <h3>Miami Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Florida, USA</p>
+                <p class="description">Dive into the vibrant energy of Miami Beach, Florida — where Art Deco architecture meets turquoise waters and world-class nightlife.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Santa Monica Beach.png" alt="Santa Monica Beach">
             <div class="destination-info">
-                <h3>Santa Monica Beach - USA</h3>
-                <p>Discover California's legendary Santa Monica Beach — home to the famous pier, vibrant boardwalk, and endless ocean views.</p>
+                <h3>Santa Monica Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> California, USA</p>
+                <p class="description">Discover California's legendary Santa Monica Beach — home to the famous pier, vibrant boardwalk, and endless ocean views.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Clearwater Beach.png" alt="Clearwater Beach">
             <div class="destination-info">
-                <h3>Clearwater Beach - USA</h3>
-                <p>Relax on the powdery white sands of Clearwater Beach, Florida — consistently rated as one of America's best beaches with stunning Gulf Coast sunsets.</p>
+                <h3>Clearwater Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Florida, USA</p>
+                <p class="description">Relax on the powdery white sands of Clearwater Beach, Florida — consistently rated as one of America's best beaches with stunning Gulf Coast sunsets.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
     </div>
 </section>
-
 
 <section class="region-section">
     <h2 class="region-title">Mexico</h2>
@@ -138,29 +143,40 @@
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Cancun Beach.png" alt="Cancun Beach">
             <div class="destination-info">
-                <h3>Cancun Beach - Mexico</h3>
-                <p>Discover the paradise of Cancun Beach — featuring pristine white sand, turquoise Caribbean waters, and luxurious resorts along the Hotel Zone.</p>
+                <h3>Cancun Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Quintana Roo, Mexico</p>
+                <p class="description">Discover the paradise of Cancun Beach — featuring pristine white sand, turquoise Caribbean waters, and luxurious resorts along the Hotel Zone.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Playa del Carmen.png" alt="Playa del Carmen">
             <div class="destination-info">
-                <h3>Playa del Carmen - Mexico</h3>
-                <p>Explore Playa del Carmen — a trendy beach town with beautiful shores, vibrant nightlife, and easy access to Mayan ruins and cenotes.</p>
+                <h3>Playa del Carmen</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Riviera Maya, Mexico</p>
+                <p class="description">Explore Playa del Carmen — a trendy beach town with beautiful shores, vibrant nightlife, and easy access to Mayan ruins and cenotes.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Tulum Beach.png" alt="Tulum Beach">
             <div class="destination-info">
-                <h3>Tulum Beach - Mexico</h3>
-                <p>Visit Tulum Beach — where ancient Mayan ruins overlook stunning Caribbean coastline, offering a perfect blend of history and natural beauty.</p>
+                <h3>Tulum Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Quintana Roo, Mexico</p>
+                <p class="description">Visit Tulum Beach — where ancient Mayan ruins overlook stunning Caribbean coastline, offering a perfect blend of history and natural beauty.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
     </div>
 </section>
-
 
 <section class="region-section">
     <h2 class="region-title">Europe</h2>
@@ -168,69 +184,100 @@
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Navagio Beach (Shipwreck Beach).png" alt="Navagio Beach">
             <div class="destination-info">
-                <h3>Navagio Beach (Shipwreck Beach) - Greece</h3>
-                <p>Discover the hidden gem of Navagio Beach, Greece — featuring dramatic cliffs, pristine turquoise waters, and the famous shipwreck on its shores.</p>
+                <h3>Navagio Beach (Shipwreck Beach)</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Zakynthos, Greece</p>
+                <p class="description">Discover the hidden gem of Navagio Beach, Greece — featuring dramatic cliffs, pristine turquoise waters, and the famous shipwreck on its shores.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Myrtos Beach.png" alt="Myrtos Beach">
             <div class="destination-info">
-                <h3>Myrtos Beach - Greece</h3>
-                <p>Experience the breathtaking beauty of Myrtos Beach, Greece — where white pebbles contrast with brilliant blue waters against towering cliffs.</p>
+                <h3>Myrtos Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Kefalonia, Greece</p>
+                <p class="description">Experience the breathtaking beauty of Myrtos Beach, Greece — where white pebbles contrast with brilliant blue waters against towering cliffs.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Elafonissi Beach.png" alt="Elafonissi Beach">
             <div class="destination-info">
-                <h3>Elafonissi Beach - Greece</h3>
-                <p>Visit the exotic Elafonissi Beach, Greece — famous for its pink sand created by crushed shells, shallow turquoise lagoons, and stunning natural beauty.</p>
+                <h3>Elafonissi Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Crete, Greece</p>
+                <p class="description">Visit the exotic Elafonissi Beach, Greece — famous for its pink sand created by crushed shells, shallow turquoise lagoons, and stunning natural beauty.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Praia da Marinha.png" alt="Praia da Marinha">
             <div class="destination-info">
-                <h3>Praia da Marinha - Portugal</h3>
-                <p>Explore Portugal's stunning Praia da Marinha — featuring dramatic limestone cliffs, hidden caves, and some of Europe's clearest waters.</p>
+                <h3>Praia da Marinha</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Algarve, Portugal</p>
+                <p class="description">Explore Portugal's stunning Praia da Marinha — featuring dramatic limestone cliffs, hidden caves, and some of Europe's clearest waters.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/La Concha Beach.png" alt="La Concha Beach">
             <div class="destination-info">
-                <h3>La Concha Beach - Spain</h3>
-                <p>Stroll along La Concha Beach, Spain — an elegant urban beach with golden sand, calm waters, and stunning views of San Sebastián's bay.</p>
+                <h3>La Concha Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> San Sebastián, Spain</p>
+                <p class="description">Stroll along La Concha Beach, Spain — an elegant urban beach with golden sand, calm waters, and stunning views of San Sebastián's bay.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Zlatni Rat.png" alt="Zlatni Rat">
             <div class="destination-info">
-                <h3>Zlatni Rat - Croatia</h3>
-                <p>Visit Croatia's iconic Zlatni Rat — a unique golden cape that shifts with the tides, surrounded by crystal-clear Adriatic waters.</p>
+                <h3>Zlatni Rat</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Brač Island, Croatia</p>
+                <p class="description">Visit Croatia's iconic Zlatni Rat — a unique golden cape that shifts with the tides, surrounded by crystal-clear Adriatic waters.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Reynisfjara Black Sand Beach.png" alt="Reynisfjara Black Sand Beach">
             <div class="destination-info">
-                <h3>Reynisfjara Black Sand Beach - Iceland</h3>
-                <p>Witness the otherworldly beauty of Reynisfjara, Iceland — where volcanic black sand meets powerful waves and dramatic basalt columns.</p>
+                <h3>Reynisfjara Black Sand Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Vík, Iceland</p>
+                <p class="description">Witness the otherworldly beauty of Reynisfjara, Iceland — where volcanic black sand meets powerful waves and dramatic basalt columns.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Nice Beach.png" alt="Nice Beach">
             <div class="destination-info">
-                <h3>Nice Beach - France</h3>
-                <p>Experience the elegance of Nice Beach, France — the famous Promenade des Anglais, stunning French Riviera views, and Mediterranean charm.</p>
+                <h3>Nice Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> French Riviera, France</p>
+                <p class="description">Experience the elegance of Nice Beach, France — the famous Promenade des Anglais, stunning French Riviera views, and Mediterranean charm.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
     </div>
 </section>
-
 
 <section class="region-section">
     <h2 class="region-title">Middle East</h2>
@@ -238,16 +285,24 @@
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Jumeirah Beach.png" alt="Jumeirah Beach">
             <div class="destination-info">
-                <h3>Jumeirah Beach - Dubai</h3>
-                <p>Indulge in the luxury of Jumeirah Beach, Dubai — where pristine white sand meets turquoise waters with the iconic Burj Al Arab as backdrop.</p>
+                <h3>Jumeirah Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Dubai, UAE</p>
+                <p class="description">Indulge in the luxury of Jumeirah Beach, Dubai — where pristine white sand meets turquoise waters with the iconic Burj Al Arab as backdrop.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Corniche Beach.png" alt="Corniche Beach">
             <div class="destination-info">
-                <h3>Corniche Beach - Abu Dhabi</h3>
-                <p>Relax at Corniche Beach, Abu Dhabi — a beautiful urban beach with clear waters, beachfront cafes, and stunning views of the city skyline.</p>
+                <h3>Corniche Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Abu Dhabi, UAE</p>
+                <p class="description">Relax at Corniche Beach, Abu Dhabi — a beautiful urban beach with clear waters, beachfront cafes, and stunning views of the city skyline.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
     </div>
@@ -259,66 +314,57 @@
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Hurghada Beach.png" alt="Hurghada Beach">
             <div class="destination-info">
-                <h3>Hurghada Beach - Egypt</h3>
-                <p>Discover Hurghada Beach, Egypt — a Red Sea paradise offering world-class diving, vibrant coral reefs, and year-round sunshine.</p>
+                <h3>Hurghada Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Red Sea, Egypt</p>
+                <p class="description">Discover Hurghada Beach, Egypt — a Red Sea paradise offering world-class diving, vibrant coral reefs, and year-round sunshine.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Sharm El Sheikh Beach.png" alt="Sharm El Sheikh Beach">
             <div class="destination-info">
-                <h3>Sharm El Sheikh Beach - Egypt</h3>
-                <p>Experience Sharm El Sheikh Beach, Egypt — renowned for its spectacular underwater world, luxury resorts, and pristine Red Sea coastline.</p>
+                <h3>Sharm El Sheikh Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Sinai Peninsula, Egypt</p>
+                <p class="description">Experience Sharm El Sheikh Beach, Egypt — renowned for its spectacular underwater world, luxury resorts, and pristine Red Sea coastline.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
 
         <div class="destination-card">
             <img src="./assets/images/Beach Images/Agadir Beach.png" alt="Agadir Beach">
             <div class="destination-info">
-                <h3>Agadir Beach - Morocco</h3>
-                <p>Enjoy Agadir Beach, Morocco — a modern resort destination with a long sandy beach, warm climate, and stunning views of the Atlas Mountains.</p>
+                <h3>Agadir Beach</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Agadir, Morocco</p>
+                <p class="description">Enjoy Agadir Beach, Morocco — a modern resort destination with a long sandy beach, warm climate, and stunning views of the Atlas Mountains.</p>
+                <button onclick="downloadPDF()" class="download-btn">
+                    <i class="bi bi-download"></i> Download PDF
+                </button>
             </div>
         </div>
     </div>
 </section>
-    
 
-
-
-
-
-    
 <footer class="footer">
-    
     <div class="footer-content">
         <div class="footer-container">
-            
             <div class="footer-col">
-                <h3 class="footer-heading">
-                    About Beautiful Beaches
-                </h3>
-                <p class="footer-desc">Discover Pakistan's most stunning coastal destinations. From pristine beaches to hidden gems, explore the beauty of our shores.</p>
+                <h3 class="footer-heading">About Beautiful Beaches</h3>
+                <p class="footer-desc">Your ultimate guide to discovering 72+ world's most stunning coastal destinations across 4 global zones.</p>
                 <div class="footer-social">
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
                 </div>
             </div>
 
-            
             <div class="footer-col">
-                <h3 class="footer-heading">
-                    Quick Links
-                </h3>
+                <h3 class="footer-heading">Quick Links</h3>
                 <ul class="footer-links">
                     <li><a href="Index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
                     <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
@@ -329,44 +375,39 @@
                 </ul>
             </div>
 
-            
             <div class="footer-col">
-                <h3 class="footer-heading">
-                    Explore Zones
-                </h3>
+                <h3 class="footer-heading">Explore Zones</h3>
                 <ul class="footer-links">
-                    <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone</a></li>
-                    <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone</a></li>
-                    <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone</a></li>
-                    <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone</a></li>
+                    <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone (20+ beaches)</a></li>
+                    <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone (18+ beaches)</a></li>
+                    <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone (17+ beaches)</a></li>
+                    <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone (17+ beaches)</a></li>
                     <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
                 </ul>
             </div>
 
-                        <div class="footer-col">
-                <h3 class="footer-heading">
-                    Contact Us
-                </h3>
+            <div class="footer-col">
+                <h3 class="footer-heading">Contact Us</h3>
                 <ul class="footer-contact">
                     <li>
                         <i class="bi bi-telephone-fill contact-icon"></i>
                         <div class="contact-info">
                             <strong>Phone</strong>
-                            <a href="tel:+923231234567">(+92) 323-12345</a>
+                            <a href="tel:+18001234567">+1 (800) 123-4567</a>
                         </div>
                     </li>
                     <li>
                         <i class="bi bi-envelope-fill contact-icon"></i>
                         <div class="contact-info">
                             <strong>Email</strong>
-                            <a href="mailto:info@beautifulbeaches.pk">info@beautifulbeaches.pk</a>
+                            <a href="mailto:info@beautifulbeaches.com">info@beautifulbeaches.com</a>
                         </div>
                     </li>
                     <li>
-                        <i class="bi bi-geo-alt-fill contact-icon"></i>
+                        <i class="bi bi-globe"></i>
                         <div class="contact-info">
-                            <strong>Location</strong>
-                            <span>Karachi, Pakistan</span>
+                            <strong>Website</strong>
+                            <span>www.beautifulbeaches.com</span>
                         </div>
                     </li>
                 </ul>
@@ -374,12 +415,11 @@
             </div>
         </div>
 
-        
         <div class="footer-newsletter">
             <div class="newsletter-container">
                 <div class="newsletter-content">
                     <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
-                    <p class="newsletter-desc">Get updates about new beaches, travel tips, and exclusive offers!</p>
+                    <p class="newsletter-desc">Get travel tips, beach recommendations, and exclusive deals!</p>
                 </div>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
@@ -388,7 +428,6 @@
             </div>
         </div>
 
-        
         <div class="footer-bottom">
             <div class="footer-bottom-content">
                 <p class="copyright">&copy; 2025 Beautiful Beaches. All Rights Reserved.</p>
@@ -405,15 +444,67 @@
 </footer>
     
 <script>
+// Mobile menu toggle
+var mobileMenuToggle = document.getElementById('mobileMenuToggle');
+var navigationMenu = document.getElementById('navigationMenu');
+
+if (mobileMenuToggle) {
+    mobileMenuToggle.onclick = function() {
+        navigationMenu.classList.toggle('active');
+        
+        var icon = mobileMenuToggle.querySelector('i');
+        if (navigationMenu.classList.contains('active')) {
+            icon.className = 'bi bi-x-lg';
+        } else {
+            icon.className = 'bi bi-list';
+        }
+    };
+}
+
+// Scroll header effect
+window.onscroll = function() {
+    var header = document.querySelector('.main-header');
+    
+    if (window.pageYOffset > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+};
+
+// Download PDF function
 function downloadPDF() {
-    const link = document.createElement('a');
+    var link = document.createElement('a');
     link.href = './Assets/PDF/BeautifulBeachesSRS.pdf';
     link.download = 'BeautifulBeachesSRS.pdf';
-    link.target = '_blank';
-    
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+}
+
+// Newsletter form submit
+var newsletterForm = document.querySelector('.newsletter-form');
+
+if (newsletterForm) {
+    newsletterForm.onsubmit = function(e) {
+        e.preventDefault();
+        var input = newsletterForm.querySelector('.newsletter-input');
+        var email = input.value;
+        
+        if (email) {
+            var btn = newsletterForm.querySelector('.newsletter-btn');
+            var originalText = btn.textContent;
+            
+            btn.textContent = 'Subscribed!';
+            btn.style.background = '#28a745';
+            
+            setTimeout(function() {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                input.value = '';
+            }, 3000);
+        }
+    };
 }
 </script>
 </body>
