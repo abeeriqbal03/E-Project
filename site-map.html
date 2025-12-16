@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="site-map.css">
 </head>
 <body>
-    
+
     <header class="main-header">
         <div class="brand-logo">
             <img src="./Assets/Images/logo/logo.png" alt="Beautiful Beaches">
@@ -77,6 +77,7 @@
             <i class="bi bi-list"></i>
         </button>
     </header>
+
 
     <section class="sitemap-hero">
         <div class="hero-shapes">
@@ -408,7 +409,7 @@
             <div class="footer-container">
                 <div class="footer-col">
                     <h3 class="footer-heading">About Beautiful Beaches</h3>
-                    <p class="footer-desc">Discover world's most stunning coastal destinations. From pristine beaches to hidden gems, explore the beauty of our shores.</p>
+                    <p class="footer-desc">Your ultimate guide to discovering 72+ world's most stunning coastal destinations across 4 global zones.</p>
                     <div class="footer-social">
                         <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
@@ -432,10 +433,10 @@
                 <div class="footer-col">
                     <h3 class="footer-heading">Explore Zones</h3>
                     <ul class="footer-links">
-                        <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone</a></li>
-                        <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone</a></li>
-                        <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone</a></li>
-                        <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone</a></li>
+                        <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone </a></li>
+                        <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone </a></li>
+                        <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone </a></li>
+                        <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone </a></li>
                         <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
                     </ul>
                 </div>
@@ -458,10 +459,10 @@
                             </div>
                         </li>
                         <li>
-                            <i class="bi bi-geo-alt-fill contact-icon"></i>
+                            <i class="bi bi-globe"></i>
                             <div class="contact-info">
-                                <strong>Location</strong>
-                                <span>Worldwide</span>
+                                <strong>Website</strong>
+                                <span>www.beautifulbeaches.com</span>
                             </div>
                         </li>
                     </ul>
@@ -473,7 +474,7 @@
                 <div class="newsletter-container">
                     <div class="newsletter-content">
                         <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
-                        <p class="newsletter-desc">Get updates about new beaches, travel tips, and exclusive offers!</p>
+                        <p class="newsletter-desc">Get travel tips, beach recommendations, and exclusive deals!</p>
                     </div>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
@@ -507,6 +508,22 @@
         link.click();
         document.body.removeChild(link);
     }
+
+    var mobileMenuToggle = document.getElementById('mobileMenuToggle');
+var navigationMenu = document.getElementById('navigationMenu');
+
+if (mobileMenuToggle) {
+    mobileMenuToggle.onclick = function() {
+        navigationMenu.classList.toggle('active');
+        
+        var icon = mobileMenuToggle.querySelector('i');
+        if (navigationMenu.classList.contains('active')) {
+            icon.className = 'bi bi-x-lg';
+        } else {
+            icon.className = 'bi bi-list';
+        }
+    };
+}
     </script>
 </body>
 </html> 

@@ -274,19 +274,12 @@ html {
     font-weight: bold;
 }
 
-.destinations {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px 8%;
-}
-
 .destination-card {
     background: white;
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+    height: 100%;
 }
 
 .destination-card:hover {
@@ -316,6 +309,53 @@ html {
     line-height: 1.5;
 }
 
+/* Download Button Styles */
+.location {
+    color: #1CA7EC;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.location i {
+    font-size: 1rem;
+}
+
+.description {
+    color: grey;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #1CA7EC 0%, #0891d1 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(28, 167, 236, 0.3);
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #003049 0%, #002535 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 48, 73, 0.4);
+}
+
+.download-btn i {
+    font-size: 16px;
+}
 
 .footer {
     position: relative;
@@ -507,3 +547,83 @@ html {
     transition: all 0.3s ease;
 }
 
+.footer-bottom-links a:hover {
+    color: #1CA7EC;
+}
+
+.separator {
+    margin: 0 10px;
+}
+
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        padding: 15px 20px;
+        gap: 20px;
+    }
+
+    .navigation-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        gap: 0;
+    }
+
+    .navigation-menu.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 15px 20px;
+        border-radius: 0;
+        justify-content: flex-start;
+    }
+
+    .nav-dropdown .dropdown-menu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        border-left: 3px solid #1CA7EC;
+        margin-left: 20px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .page-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .page-title p {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+    }
+
+    .newsletter-form {
+        width: 100%;
+    }
+}

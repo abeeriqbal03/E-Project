@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Beaches - Explore World's Most Stunning Coastal Destinations</title>
+    <title>East Zone - Beautiful Beaches</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="east.css">
 </head>
@@ -78,8 +79,6 @@
         </button>
     </header>
 
-    
-
 <section class="page-title">
     <h1>Featured Beaches Around the East Zone</h1>
     <p>Discover the most stunning coastal destinations across eastern continents</p>
@@ -87,20 +86,34 @@
 
 <section class="region-section">
     <h2 class="region-title">Philippines</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/White Beach (Boracay).png" alt="White Beach (Boracay)">
-            <div class="destination-info">
-                <h3>White Beach (Boracay) - Philippines</h3>
-                <p>Discover White Beach in Boracay, Philippines — a powdery white sand paradise with crystal-clear waters, vibrant nightlife, and endless water sports.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/White Beach (Boracay).png" alt="White Beach (Boracay)">
+                    <div class="destination-info">
+                        <h3>White Beach (Boracay)</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Boracay, Philippines</p>
+                        <p class="description">A powdery white sand paradise with crystal-clear waters, vibrant nightlife, and endless water sports.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/El Nido Beach.png" alt="El Nido Beach">
-            <div class="destination-info">
-                <h3>El Nido Beach - Philippines</h3>
-                <p>Explore El Nido Beach, Philippines — surrounded by limestone cliffs, turquoise lagoons, and ideal for island hopping and adventure activities.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/El Nido Beach.png" alt="El Nido Beach">
+                    <div class="destination-info">
+                        <h3>El Nido Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Palawan, Philippines</p>
+                        <p class="description">Surrounded by limestone cliffs, turquoise lagoons, and ideal for island hopping and adventure activities.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -108,20 +121,34 @@
 
 <section class="region-section">
     <h2 class="region-title">Vietnam</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Nha Trang Beach.png" alt="Nha Trang Beach">
-            <div class="destination-info">
-                <h3>Nha Trang Beach - Vietnam</h3>
-                <p>Relax on Nha Trang Beach, Vietnam — known for its pristine sands, vibrant coral reefs, and a mix of relaxation and water-based adventures.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Nha Trang Beach.png" alt="Nha Trang Beach">
+                    <div class="destination-info">
+                        <h3>Nha Trang Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Khánh Hòa, Vietnam</p>
+                        <p class="description">Known for its pristine sands, vibrant coral reefs, and a mix of relaxation and water-based adventures.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Da Nang Beach.png" alt="Da Nang Beach">
-            <div class="destination-info">
-                <h3>Da Nang Beach - Vietnam</h3>
-                <p>Visit Da Nang Beach, Vietnam — a long stretch of golden sand with modern resorts, Son Tra Peninsula views, and exciting beach activities.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Da Nang Beach.png" alt="Da Nang Beach">
+                    <div class="destination-info">
+                        <h3>Da Nang Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Da Nang, Vietnam</p>
+                        <p class="description">A long stretch of golden sand with modern resorts, Son Tra Peninsula views, and exciting beach activities.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -129,20 +156,34 @@
 
 <section class="region-section">
     <h2 class="region-title">South Korea</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Haeundae Beach.png" alt="Haeundae Beach">
-            <div class="destination-info">
-                <h3>Haeundae Beach - South Korea</h3>
-                <p>Experience Haeundae Beach, South Korea — Busan's iconic urban beach with wide sands, luxury hotels, and a lively atmosphere for all seasons.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Haeundae Beach.png" alt="Haeundae Beach">
+                    <div class="destination-info">
+                        <h3>Haeundae Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Busan, South Korea</p>
+                        <p class="description">Busan's iconic urban beach with wide sands, luxury hotels, and a lively atmosphere for all seasons.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Jeju Beach.png" alt="Jeju Beach">
-            <div class="destination-info">
-                <h3>Jeju Beach - South Korea</h3>
-                <p>Discover Jeju Beach, South Korea — featuring volcanic sands, clear waters, and proximity to Jeju Island's natural wonders and hiking trails.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Jeju Beach.png" alt="Jeju Beach">
+                    <div class="destination-info">
+                        <h3>Jeju Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Jeju Island, South Korea</p>
+                        <p class="description">Featuring volcanic sands, clear waters, and proximity to Jeju Island's natural wonders and hiking trails.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -150,20 +191,34 @@
 
 <section class="region-section">
     <h2 class="region-title">Japan</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Okinawa Beaches - Japan.png" alt="Okinawa Beaches">
-            <div class="destination-info">
-                <h3>Okinawa Beaches - Japan</h3>
-                <p>Explore Okinawa Beaches, Japan — a collection of stunning shores with emerald waters, coral reefs, and a blend of culture and relaxation.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Okinawa Beaches - Japan.png" alt="Okinawa Beaches">
+                    <div class="destination-info">
+                        <h3>Okinawa Beaches</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Okinawa, Japan</p>
+                        <p class="description">A collection of stunning shores with emerald waters, coral reefs, and a blend of culture and relaxation.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Miyakojima Beach.png" alt="Miyakojima Beach">
-            <div class="destination-info">
-                <h3>Miyakojima Beach - Japan</h3>
-                <p>Visit Miyakojima Beach, Japan — known for its soft white sands, star-shaped sandbar, and serene island vibes in the Miyako Islands.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Miyakojima Beach.png" alt="Miyakojima Beach">
+                    <div class="destination-info">
+                        <h3>Miyakojima Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Miyako Islands, Japan</p>
+                        <p class="description">Known for its soft white sands, star-shaped sandbar, and serene island vibes in the Miyako Islands.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -171,28 +226,48 @@
 
 <section class="region-section">
     <h2 class="region-title">Indonesia</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Bali (Kuta Beach).png" alt="Bali (Kuta Beach)">
-            <div class="destination-info">
-                <h3>Bali (Kuta Beach) - Indonesia</h3>
-                <p>Experience Bali's Kuta Beach, Indonesia — a surfer's paradise with golden sands, vibrant nightlife, and stunning sunsets over the Indian Ocean.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Bali (Kuta Beach).png" alt="Bali (Kuta Beach)">
+                    <div class="destination-info">
+                        <h3>Bali (Kuta Beach)</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Bali, Indonesia</p>
+                        <p class="description">A surfer's paradise with golden sands, vibrant nightlife, and stunning sunsets over the Indian Ocean.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Nusa Dua.png" alt="Nusa Dua">
-            <div class="destination-info">
-                <h3>Nusa Dua - Indonesia</h3>
-                <p>Relax at Nusa Dua, Indonesia — Bali's luxury beach area with pristine white sands, calm waters, and world-class resorts and spas.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Nusa Dua.png" alt="Nusa Dua">
+                    <div class="destination-info">
+                        <h3>Nusa Dua</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Bali, Indonesia</p>
+                        <p class="description">Bali's luxury beach area with pristine white sands, calm waters, and world-class resorts and spas.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Gili Islands.png" alt="Gili Islands">
-            <div class="destination-info">
-                <h3>Gili Islands - Indonesia</h3>
-                <p>Discover the Gili Islands, Indonesia — trio of paradise islands with powdery beaches, crystal-clear lagoons, and opportunities for snorkeling and diving.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Gili Islands.png" alt="Gili Islands">
+                    <div class="destination-info">
+                        <h3>Gili Islands</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Lombok, Indonesia</p>
+                        <p class="description">Trio of paradise islands with powdery beaches, crystal-clear lagoons, and opportunities for snorkeling and diving.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -200,20 +275,34 @@
 
 <section class="region-section">
     <h2 class="region-title">Malaysia</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Langkawi Beach.png" alt="Langkawi Beach">
-            <div class="destination-info">
-                <h3>Langkawi Beach - Malaysia</h3>
-                <p>Explore Langkawi Beach, Malaysia — featuring soft white sands, duty-free shopping, and access to rainforests and cable car rides.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Langkawi Beach.png" alt="Langkawi Beach">
+                    <div class="destination-info">
+                        <h3>Langkawi Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Langkawi, Malaysia</p>
+                        <p class="description">Featuring soft white sands, duty-free shopping, and access to rainforests and cable car rides.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Perhentian Islands.png" alt="Perhentian Islands">
-            <div class="destination-info">
-                <h3>Perhentian Islands - Malaysia</h3>
-                <p>Visit the Perhentian Islands, Malaysia — a diver's haven with turquoise waters, coral reefs, and secluded beaches for ultimate relaxation.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Perhentian Islands.png" alt="Perhentian Islands">
+                    <div class="destination-info">
+                        <h3>Perhentian Islands</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Terengganu, Malaysia</p>
+                        <p class="description">A diver's haven with turquoise waters, coral reefs, and secluded beaches for ultimate relaxation.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -221,28 +310,48 @@
 
 <section class="region-section">
     <h2 class="region-title">Thailand</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Phuket (Patong Beach).png" alt="Phuket (Patong Beach)">
-            <div class="destination-info">
-                <h3>Phuket (Patong Beach) - Thailand</h3>
-                <p>Experience Patong Beach in Phuket, Thailand — a bustling stretch of sand with vibrant nightlife, water sports, and tropical island vibes.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Phuket (Patong Beach).png" alt="Phuket (Patong Beach)">
+                    <div class="destination-info">
+                        <h3>Phuket (Patong Beach)</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Phuket, Thailand</p>
+                        <p class="description">A bustling stretch of sand with vibrant nightlife, water sports, and tropical island vibes.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Maya Bay.png" alt="Maya Bay">
-            <div class="destination-info">
-                <h3>Maya Bay - Thailand</h3>
-                <p>Discover Maya Bay, Thailand — the iconic location from The Beach movie, with emerald waters, limestone cliffs, and pristine natural beauty.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Maya Bay.png" alt="Maya Bay">
+                    <div class="destination-info">
+                        <h3>Maya Bay</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Phi Phi Islands, Thailand</p>
+                        <p class="description">The iconic location from The Beach movie, with emerald waters, limestone cliffs, and pristine natural beauty.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Koh Samui.png" alt="Koh Samui">
-            <div class="destination-info">
-                <h3>Koh Samui - Thailand</h3>
-                <p>Relax on Koh Samui, Thailand — known for its coconut palms, white-sand beaches, and a mix of luxury resorts and cultural experiences.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Koh Samui.png" alt="Koh Samui">
+                    <div class="destination-info">
+                        <h3>Koh Samui</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Surat Thani, Thailand</p>
+                        <p class="description">Known for its coconut palms, white-sand beaches, and a mix of luxury resorts and cultural experiences.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -250,143 +359,183 @@
 
 <section class="region-section">
     <h2 class="region-title">China</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Sanya Beach - China.png" alt="Sanya Beach">
-            <div class="destination-info">
-                <h3>Sanya Beach - China</h3>
-                <p>Visit Sanya Beach, China — Hainan's tropical paradise with palm-fringed shores, clear waters, and a gateway to China's southernmost resorts.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Sanya Beach - China.png" alt="Sanya Beach">
+                    <div class="destination-info">
+                        <h3>Sanya Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Hainan, China</p>
+                        <p class="description">Hainan's tropical paradise with palm-fringed shores, clear waters, and a gateway to China's southernmost resorts.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-        
-<footer class="footer">
-    
-    <div class="footer-content">
-        <div class="footer-container">
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    About Beautiful Beaches
-                </h3>
-                <p class="footer-desc">Discover Pakistan's most stunning coastal destinations. From pristine beaches to hidden gems, explore the beauty of our shores.</p>
-                <div class="footer-social">
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3 class="footer-heading">About Beautiful Beaches</h3>
+                    <p class="footer-desc">Your ultimate guide to discovering 72+ world's most stunning coastal destinations across 4 global zones.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="Index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about-us.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                        <li><a href="site-map.html"><i class="bi bi-chevron-right"></i> Site Map</a></li>
+                        <li><a href="queries.html"><i class="bi bi-chevron-right"></i> Queries</a></li>
+                        <li><a href="feedback.html"><i class="bi bi-chevron-right"></i> Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Explore Zones</h3>
+                    <ul class="footer-links">
+                        <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone </a></li>
+                        <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone </a></li>
+                        <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone </a></li>
+                        <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone </a></li>
+                        <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-telephone-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Phone</strong>
+                                <a href="tel:+18001234567">+1 (800) 123-4567</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Email</strong>
+                                <a href="mailto:info@beautifulbeaches.com">info@beautifulbeaches.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-globe"></i>
+                            <div class="contact-info">
+                                <strong>Website</strong>
+                                <span>www.beautifulbeaches.com</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="footer-btn">Get in Touch</a>
                 </div>
             </div>
 
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    Quick Links
-                </h3>
-                <ul class="footer-links">
-                    <li><a href="Index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
-                    <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
-                    <li><a href="about-us.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
-                    <li><a href="site-map.html"><i class="bi bi-chevron-right"></i> Site Map</a></li>
-                    <li><a href="queries.html"><i class="bi bi-chevron-right"></i> Queries</a></li>
-                    <li><a href="feedback.html"><i class="bi bi-chevron-right"></i> Feedback</a></li>
-                </ul>
-            </div>
-
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    Explore Zones
-                </h3>
-                <ul class="footer-links">
-                    <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone</a></li>
-                    <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone</a></li>
-                    <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone</a></li>
-                    <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone</a></li>
-                    <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
-                </ul>
-            </div>
-
-                        <div class="footer-col">
-                <h3 class="footer-heading">
-                    Contact Us
-                </h3>
-                <ul class="footer-contact">
-                    <li>
-                        <i class="bi bi-telephone-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Phone</strong>
-                            <a href="tel:+923231234567">(+92) 323-12345</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="bi bi-envelope-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Email</strong>
-                            <a href="mailto:info@beautifulbeaches.pk">info@beautifulbeaches.pk</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="bi bi-geo-alt-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Location</strong>
-                            <span>Karachi, Pakistan</span>
-                        </div>
-                    </li>
-                </ul>
-                <a href="contact.html" class="footer-btn">Get in Touch</a>
-            </div>
-        </div>
-
-        
-        <div class="footer-newsletter">
-            <div class="newsletter-container">
-                <div class="newsletter-content">
-                    <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
-                    <p class="newsletter-desc">Get updates about new beaches, travel tips, and exclusive offers!</p>
+            <div class="footer-newsletter">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
+                        <p class="newsletter-desc">Get travel tips, beach recommendations, and exclusive deals!</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
                 </div>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
-                    <button type="submit" class="newsletter-btn">Subscribe</button>
-                </form>
             </div>
-        </div>
 
-        
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <p class="copyright">&copy; 2025 Beautiful Beaches. All Rights Reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <span class="separator">|</span>
-                    <a href="#">Terms of Service</a>
-                    <span class="separator">|</span>
-                    <a href="feedback.html">Feedback</a>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 Beautiful Beaches. All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <span class="separator">|</span>
+                        <a href="#">Terms of Service</a>
+                        <span class="separator">|</span>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-    
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+// Mobile menu toggle
+var mobileMenuToggle = document.getElementById('mobileMenuToggle');
+var navigationMenu = document.getElementById('navigationMenu');
+
+if (mobileMenuToggle) {
+    mobileMenuToggle.onclick = function() {
+        navigationMenu.classList.toggle('active');
+        
+        var icon = mobileMenuToggle.querySelector('i');
+        if (navigationMenu.classList.contains('active')) {
+            icon.className = 'bi bi-x-lg';
+        } else {
+            icon.className = 'bi bi-list';
+        }
+    };
+}
+
+// Scroll header effect
+window.onscroll = function() {
+    var header = document.querySelector('.main-header');
+    
+    if (window.pageYOffset > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+};
+
+// Download PDF function
 function downloadPDF() {
-    const link = document.createElement('a');
+    var link = document.createElement('a');
     link.href = './Assets/PDF/BeautifulBeachesSRS.pdf';
     link.download = 'BeautifulBeachesSRS.pdf';
-    link.target = '_blank';
-    
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+}
+
+// Newsletter form submit
+var newsletterForm = document.querySelector('.newsletter-form');
+
+if (newsletterForm) {
+    newsletterForm.onsubmit = function(e) {
+        e.preventDefault();
+        var input = newsletterForm.querySelector('.newsletter-input');
+        var email = input.value;
+        
+        if (email) {
+            var btn = newsletterForm.querySelector('.newsletter-btn');
+            var originalText = btn.textContent;
+            
+            btn.textContent = 'Subscribed!';
+            btn.style.background = '#28a745';
+            
+            setTimeout(function() {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                input.value = '';
+            }, 3000);
+        }
+    };
 }
 </script>
 </body>

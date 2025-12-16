@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="queries.css">
 </head>
 <body>
-    
+
     <header class="main-header">
         <div class="brand-logo">
             <img src="./Assets/Images/logo/logo.png" alt="Beautiful Beaches">
@@ -442,7 +442,7 @@
         </div>
     </section>
 
-<footer class="footer">
+    <footer class="footer">
         <div class="footer-content">
             <div class="footer-container">
                 <div class="footer-col">
@@ -471,10 +471,10 @@
                 <div class="footer-col">
                     <h3 class="footer-heading">Explore Zones</h3>
                     <ul class="footer-links">
-                        <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone (20+ beaches)</a></li>
-                        <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone (18+ beaches)</a></li>
-                        <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone (17+ beaches)</a></li>
-                        <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone (17+ beaches)</a></li>
+                        <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone </a></li>
+                        <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone </a></li>
+                        <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone </a></li>
+                        <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone </a></li>
                         <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
                     </ul>
                 </div>
@@ -535,5 +535,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var mobileMenuToggle = document.getElementById('mobileMenuToggle');
+var navigationMenu = document.getElementById('navigationMenu');
+
+if (mobileMenuToggle) {
+    mobileMenuToggle.onclick = function() {
+        navigationMenu.classList.toggle('active');
+        
+        var icon = mobileMenuToggle.querySelector('i');
+        if (navigationMenu.classList.contains('active')) {
+            icon.className = 'bi bi-x-lg';
+        } else {
+            icon.className = 'bi bi-list';
+        }
+    };
+}
+    </script>
 </body>
 </html>

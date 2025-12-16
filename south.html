@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Beaches - Explore World's Most Stunning Coastal Destinations</title>
+    <title>South Zone - Beautiful Beaches</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="south.css">
 </head>
@@ -78,7 +79,6 @@
         </button>
     </header>
 
-
 <section class="page-title">
     <h1>Featured Beaches Around the South Zone</h1>
     <p>Discover the most stunning coastal destinations across southern continents</p>
@@ -86,52 +86,90 @@
 
 <section class="region-section">
     <h2 class="region-title">Australia</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Bondi Beach.png" alt="Bondi Beach">
-            <div class="destination-info">
-                <h3>Bondi Beach - Australia</h3>
-                <p>Explore the iconic Bondi Beach, Australia — famous for its golden sands, world-class surfing waves, and vibrant coastal culture in Sydney.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Bondi Beach.png" alt="Bondi Beach">
+                    <div class="destination-info">
+                        <h3>Bondi Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Sydney, Australia</p>
+                        <p class="description">Famous for its golden sands, world-class surfing waves, and vibrant coastal culture in Sydney.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Whitehaven Beach.png" alt="Whitehaven Beach">
-            <div class="destination-info">
-                <h3>Whitehaven Beach - Australia</h3>
-                <p>Discover the pristine Whitehaven Beach, Australia — renowned for its silica sands that squeak underfoot, turquoise waters, and lush rainforest backdrop.</p>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Whitehaven Beach.png" alt="Whitehaven Beach">
+                    <div class="destination-info">
+                        <h3>Whitehaven Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Whitsunday Islands, Australia</p>
+                        <p class="description">Renowned for its silica sands that squeak underfoot, turquoise waters, and lush rainforest backdrop.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Gold Coast Beach.png" alt="Gold Coast Beach">
-            <div class="destination-info">
-                <h3>Gold Coast Beach - Australia</h3>
-                <p>Experience the lively Gold Coast Beach, Australia — a stretch of golden sands with thrilling surf spots, theme parks, and endless sunshine.</p>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Gold Coast Beach.png" alt="Gold Coast Beach">
+                    <div class="destination-info">
+                        <h3>Gold Coast Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Queensland, Australia</p>
+                        <p class="description">A stretch of golden sands with thrilling surf spots, theme parks, and endless sunshine.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Cable Beach.png" alt="Cable Beach">
-            <div class="destination-info">
-                <h3>Cable Beach - Australia</h3>
-                <p>Visit Cable Beach, Australia — known for its red sands, camel rides at sunset, and stunning views of the Indian Ocean in Western Australia.</p>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Cable Beach.png" alt="Cable Beach">
+                    <div class="destination-info">
+                        <h3>Cable Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Western Australia</p>
+                        <p class="description">Known for its red sands, camel rides at sunset, and stunning views of the Indian Ocean.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Hyams Beach.png" alt="Hyams Beach">
-            <div class="destination-info">
-                <h3>Hyams Beach - Australia</h3>
-                <p>Relax on Hyams Beach, Australia — celebrated for its powdery white sands, crystal-clear waters, and proximity to Jervis Bay's marine life.</p>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Hyams Beach.png" alt="Hyams Beach">
+                    <div class="destination-info">
+                        <h3>Hyams Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Jervis Bay, Australia</p>
+                        <p class="description">Celebrated for its powdery white sands, crystal-clear waters, and proximity to marine life.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Bells Beach.png" alt="Bells Beach">
-            <div class="destination-info">
-                <h3>Bells Beach - Australia</h3>
-                <p>Witness the legendary Bells Beach, Australia — a surfing paradise with massive waves, rugged cliffs, and the famous Rip Curl Pro competition.</p>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Bells Beach.png" alt="Bells Beach">
+                    <div class="destination-info">
+                        <h3>Bells Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Victoria, Australia</p>
+                        <p class="description">A surfing paradise with massive waves, rugged cliffs, and the famous Rip Curl Pro competition.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -139,20 +177,34 @@
 
 <section class="region-section">
     <h2 class="region-title">New Zealand</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Piha Beach.png" alt="Piha Beach">
-            <div class="destination-info">
-                <h3>Piha Beach - New Zealand</h3>
-                <p>Discover Piha Beach, New Zealand — a dramatic black sand beach with powerful surf, rugged landscapes, and stunning Tasman Sea views.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Piha Beach.png" alt="Piha Beach">
+                    <div class="destination-info">
+                        <h3>Piha Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Auckland, New Zealand</p>
+                        <p class="description">A dramatic black sand beach with powerful surf, rugged landscapes, and stunning Tasman Sea views.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Ninety Mile Beach.png" alt="Ninety Mile Beach">
-            <div class="destination-info">
-                <h3>Ninety Mile Beach - New Zealand</h3>
-                <p>Explore Ninety Mile Beach, New Zealand — one of the world's longest beaches, offering endless golden sands, tidal flats, and unique coastal scenery.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Ninety Mile Beach.png" alt="Ninety Mile Beach">
+                    <div class="destination-info">
+                        <h3>Ninety Mile Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Northland, New Zealand</p>
+                        <p class="description">One of the world's longest beaches, offering endless golden sands, tidal flats, and unique coastal scenery.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -160,28 +212,48 @@
 
 <section class="region-section">
     <h2 class="region-title">Brazil</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Copacabana Beach.png" alt="Copacabana Beach">
-            <div class="destination-info">
-                <h3>Copacabana Beach - Brazil</h3>
-                <p>Experience the vibrant Copacabana Beach, Brazil — Rio's famous stretch of sand with mosaic sidewalks, lively atmosphere, and iconic Sugarloaf views.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Copacabana Beach.png" alt="Copacabana Beach">
+                    <div class="destination-info">
+                        <h3>Copacabana Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Rio de Janeiro, Brazil</p>
+                        <p class="description">Rio's famous stretch of sand with mosaic sidewalks, lively atmosphere, and iconic Sugarloaf views.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Ipanema Beach.png" alt="Ipanema Beach">
-            <div class="destination-info">
-                <h3>Ipanema Beach - Brazil</h3>
-                <p>Relax on Ipanema Beach, Brazil — known for its beautiful people, colorful umbrellas, and the birthplace of the bossa nova in Rio de Janeiro.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Ipanema Beach.png" alt="Ipanema Beach">
+                    <div class="destination-info">
+                        <h3>Ipanema Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Rio de Janeiro, Brazil</p>
+                        <p class="description">Known for its beautiful people, colorful umbrellas, and the birthplace of the bossa nova.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Lopes Mendes Beach.png" alt="Lopes Mendes Beach">
-            <div class="destination-info">
-                <h3>Lopes Mendes Beach - Brazil</h3>
-                <p>Visit the secluded Lopes Mendes Beach, Brazil — a paradise on Ilha Grande with pristine sands, emerald waters, and lush Atlantic rainforest.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Lopes Mendes Beach.png" alt="Lopes Mendes Beach">
+                    <div class="destination-info">
+                        <h3>Lopes Mendes Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Ilha Grande, Brazil</p>
+                        <p class="description">A paradise on Ilha Grande with pristine sands, emerald waters, and lush Atlantic rainforest.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -189,12 +261,20 @@
 
 <section class="region-section">
     <h2 class="region-title">Uruguay</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Punta del Este.png" alt="Punta del Este">
-            <div class="destination-info">
-                <h3>Punta del Este - Uruguay</h3>
-                <p>Discover Punta del Este, Uruguay — a glamorous beach resort with golden sands, luxury hotels, and the stunning meeting point of the Atlantic and Rio de la Plata.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Punta del Este.png" alt="Punta del Este">
+                    <div class="destination-info">
+                        <h3>Punta del Este</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Maldonado, Uruguay</p>
+                        <p class="description">A glamorous beach resort with golden sands, luxury hotels, and the stunning meeting point of the Atlantic and Rio de la Plata.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -202,28 +282,48 @@
 
 <section class="region-section">
     <h2 class="region-title">South Africa</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Clifton Beach.png" alt="Clifton Beach">
-            <div class="destination-info">
-                <h3>Clifton Beach - South Africa</h3>
-                <p>Explore Clifton Beach, South Africa — four pristine coves in Cape Town with white sands, clear waters, and breathtaking views of Table Mountain.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Clifton Beach.png" alt="Clifton Beach">
+                    <div class="destination-info">
+                        <h3>Clifton Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Cape Town, South Africa</p>
+                        <p class="description">Four pristine coves in Cape Town with white sands, clear waters, and breathtaking views of Table Mountain.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Camps Bay Beach.png" alt="Camps Bay Beach">
-            <div class="destination-info">
-                <h3>Camps Bay Beach - South Africa</h3>
-                <p>Enjoy Camps Bay Beach, South Africa — a scenic urban beach with palm-lined promenades, vibrant cafes, and the Twelve Apostles mountain range.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Camps Bay Beach.png" alt="Camps Bay Beach">
+                    <div class="destination-info">
+                        <h3>Camps Bay Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Cape Town, South Africa</p>
+                        <p class="description">A scenic urban beach with palm-lined promenades, vibrant cafes, and the Twelve Apostles mountain range.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Boulders Beach.png" alt="Boulders Beach">
-            <div class="destination-info">
-                <h3>Boulders Beach - South Africa</h3>
-                <p>Visit Boulders Beach, South Africa — home to a colony of African penguins, granite boulders, and calm waters near Cape Point.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Boulders Beach.png" alt="Boulders Beach">
+                    <div class="destination-info">
+                        <h3>Boulders Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Simon's Town, South Africa</p>
+                        <p class="description">Home to a colony of African penguins, granite boulders, and calm waters near Cape Point.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -231,20 +331,34 @@
 
 <section class="region-section">
     <h2 class="region-title">Seychelles</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Anse Source d’Argent.png" alt="Anse Source d’Argent">
-            <div class="destination-info">
-                <h3>Anse Source d’Argent - Seychelles</h3>
-                <p>Discover Anse Source d’Argent, Seychelles — famous for its granite boulders, turquoise lagoon, and award-winning beauty on La Digue island.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Anse Source d’Argent.png" alt="Anse Source d'Argent">
+                    <div class="destination-info">
+                        <h3>Anse Source d'Argent</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> La Digue, Seychelles</p>
+                        <p class="description">Famous for its granite boulders, turquoise lagoon, and award-winning beauty on La Digue island.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Beau Vallon Beach.png" alt="Beau Vallon Beach">
-            <div class="destination-info">
-                <h3>Beau Vallon Beach - Seychelles</h3>
-                <p>Relax at Beau Vallon Beach, Seychelles — the island's most popular beach with soft white sands, clear waters, and vibrant marine life.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Beau Vallon Beach.png" alt="Beau Vallon Beach">
+                    <div class="destination-info">
+                        <h3>Beau Vallon Beach</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Mahé, Seychelles</p>
+                        <p class="description">The island's most popular beach with soft white sands, clear waters, and vibrant marine life.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -252,144 +366,184 @@
 
 <section class="region-section">
     <h2 class="region-title">Madagascar</h2>
-    <div class="destinations">
-        <div class="destination-card">
-            <img src="./assets/images/Beach Images/Nosy Be Beaches.png" alt="Nosy Be Beaches">
-            <div class="destination-info">
-                <h3>Nosy Be Beaches - Madagascar</h3>
-                <p>Explore Nosy Be Beaches, Madagascar — a collection of stunning shores around the island with pristine sands, coral reefs, and lush tropical landscapes.</p>
+    <div class="container-fluid px-4 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="destination-card">
+                    <img src="./assets/images/Beach Images/Nosy Be Beaches.png" alt="Nosy Be Beaches">
+                    <div class="destination-info">
+                        <h3>Nosy Be Beaches</h3>
+                        <p class="location"><i class="bi bi-geo-alt-fill"></i> Nosy Be, Madagascar</p>
+                        <p class="description">A collection of stunning shores around the island with pristine sands, coral reefs, and lush tropical landscapes.</p>
+                        <button onclick="downloadPDF()" class="download-btn">
+                            <i class="bi bi-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<footer class="footer">
-    
-    <div class="footer-content">
-        <div class="footer-container">
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    About Beautiful Beaches
-                </h3>
-                <p class="footer-desc">Discover Pakistan's most stunning coastal destinations. From pristine beaches to hidden gems, explore the beauty of our shores.</p>
-                <div class="footer-social">
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3 class="footer-heading">About Beautiful Beaches</h3>
+                    <p class="footer-desc">Your ultimate guide to discovering 72+ world's most stunning coastal destinations across 4 global zones.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="Index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about-us.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                        <li><a href="site-map.html"><i class="bi bi-chevron-right"></i> Site Map</a></li>
+                        <li><a href="queries.html"><i class="bi bi-chevron-right"></i> Queries</a></li>
+                        <li><a href="feedback.html"><i class="bi bi-chevron-right"></i> Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Explore Zones</h3>
+                    <ul class="footer-links">
+                        <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone </a></li>
+                        <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone </a></li>
+                        <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone </a></li>
+                        <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone </a></li>
+                        <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-telephone-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Phone</strong>
+                                <a href="tel:+18001234567">+1 (800) 123-4567</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill contact-icon"></i>
+                            <div class="contact-info">
+                                <strong>Email</strong>
+                                <a href="mailto:info@beautifulbeaches.com">info@beautifulbeaches.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-globe"></i>
+                            <div class="contact-info">
+                                <strong>Website</strong>
+                                <span>www.beautifulbeaches.com</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="footer-btn">Get in Touch</a>
                 </div>
             </div>
 
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    Quick Links
-                </h3>
-                <ul class="footer-links">
-                    <li><a href="Index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
-                    <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
-                    <li><a href="about-us.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
-                    <li><a href="site-map.html"><i class="bi bi-chevron-right"></i> Site Map</a></li>
-                    <li><a href="queries.html"><i class="bi bi-chevron-right"></i> Queries</a></li>
-                    <li><a href="feedback.html"><i class="bi bi-chevron-right"></i> Feedback</a></li>
-                </ul>
-            </div>
-
-            
-            <div class="footer-col">
-                <h3 class="footer-heading">
-                    Explore Zones
-                </h3>
-                <ul class="footer-links">
-                    <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone</a></li>
-                    <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone</a></li>
-                    <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone</a></li>
-                    <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone</a></li>
-                    <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
-                </ul>
-            </div>
-
-                        <div class="footer-col">
-                <h3 class="footer-heading">
-                    Contact Us
-                </h3>
-                <ul class="footer-contact">
-                    <li>
-                        <i class="bi bi-telephone-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Phone</strong>
-                            <a href="tel:+923231234567">(+92) 323-12345</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="bi bi-envelope-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Email</strong>
-                            <a href="mailto:info@beautifulbeaches.pk">info@beautifulbeaches.pk</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="bi bi-geo-alt-fill contact-icon"></i>
-                        <div class="contact-info">
-                            <strong>Location</strong>
-                            <span>Karachi, Pakistan</span>
-                        </div>
-                    </li>
-                </ul>
-                <a href="contact.html" class="footer-btn">Get in Touch</a>
-            </div>
-        </div>
-
-        
-        <div class="footer-newsletter">
-            <div class="newsletter-container">
-                <div class="newsletter-content">
-                    <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
-                    <p class="newsletter-desc">Get updates about new beaches, travel tips, and exclusive offers!</p>
+            <div class="footer-newsletter">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
+                        <p class="newsletter-desc">Get travel tips, beach recommendations, and exclusive deals!</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
                 </div>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
-                    <button type="submit" class="newsletter-btn">Subscribe</button>
-                </form>
             </div>
-        </div>
 
-        
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <p class="copyright">&copy; 2025 Beautiful Beaches. All Rights Reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <span class="separator">|</span>
-                    <a href="#">Terms of Service</a>
-                    <span class="separator">|</span>
-                    <a href="feedback.html">Feedback</a>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 Beautiful Beaches. All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <span class="separator">|</span>
+                        <a href="#">Terms of Service</a>
+                        <span class="separator">|</span>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-    
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+// Mobile menu toggle
+var mobileMenuToggle = document.getElementById('mobileMenuToggle');
+var navigationMenu = document.getElementById('navigationMenu');
+
+if (mobileMenuToggle) {
+    mobileMenuToggle.onclick = function() {
+        navigationMenu.classList.toggle('active');
+        
+        var icon = mobileMenuToggle.querySelector('i');
+        if (navigationMenu.classList.contains('active')) {
+            icon.className = 'bi bi-x-lg';
+        } else {
+            icon.className = 'bi bi-list';
+        }
+    };
+}
+
+// Scroll header effect
+window.onscroll = function() {
+    var header = document.querySelector('.main-header');
+    
+    if (window.pageYOffset > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+};
+
+// Download PDF function
 function downloadPDF() {
-    const link = document.createElement('a');
+    var link = document.createElement('a');
     link.href = './Assets/PDF/BeautifulBeachesSRS.pdf';
     link.download = 'BeautifulBeachesSRS.pdf';
-    link.target = '_blank';
-    
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
+
+// Newsletter form submit
+var newsletterForm = document.querySelector('.newsletter-form');
+
+if (newsletterForm) {
+    newsletterForm.onsubmit = function(e) {
+        e.preventDefault();
+        var input = newsletterForm.querySelector('.newsletter-input');
+        var email = input.value;
+        
+        if (email) {
+            var btn = newsletterForm.querySelector('.newsletter-btn');
+            var originalText = btn.textContent;
+            
+            btn.textContent = 'Subscribed!';
+            btn.style.background = '#28a745';
+            
+            setTimeout(function() {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                input.value = '';
+            }, 3000);
+        }
+    };
+}
 </script>
-    
 </body>
 </html>
