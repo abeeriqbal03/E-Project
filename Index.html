@@ -7,8 +7,68 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="advertise.css">
+    
 </head>
 <body>
+
+    
+    
+    <div class="popup-overlay" id="adPopup">
+        <div class="popup-container">
+            <div class="close-popup" onclick="closeAdPopup()">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            
+            <div class="ad-badge">ADVERTISEMENT</div>
+            
+            <div class="ad-content">
+                <div class="ad-left">
+                    <div class="sponsor-tag">SPONSORED BY SURFBOARD.COM</div>
+                    
+                    <h1 class="ad-title">Premium Surfboards Collection</h1>
+                    
+                    <p class="ad-description">
+                        Ride the waves with professional-grade surfboards designed for ultimate performance and style
+                    </p>
+                    
+                    <div class="ad-features">
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Carbon Fiber Construction</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Professional Grade Quality</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Multiple Sizes Available</span>
+                        </div>
+                    </div>
+                    
+                    <button class="ad-button" onclick="window.location.href='https://www.surfboards.com/displayall.php?cat_id=surfboards'">
+                        <span>Explore Collection</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="ad-right">
+                    <div class="new-badge">NEW ARRIVALS</div>
+                    <div class="surfboard-display">
+                        <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=800" alt="Premium Surfboard">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ad-footer">
+                <span>PROMOTED BY WAVE RIDER</span>
+                <span class="separator">|</span>
+                <a href="#" class="ad-link">VISIT SURFBOARD.COM</a>
+            </div>
+        </div>
+    </div>
+
     
     <header class="main-header">
         <div class="brand-logo">
@@ -25,7 +85,7 @@
             <div class="nav-dropdown">
                 <a href="zone.html" class="nav-link">
                     <i class="bi bi-compass-fill"></i>
-                    ZONE
+                    ZONE    
                     <i class="bi bi-chevron-down dropdown-arrow"></i>
                 </a>
                 <div class="dropdown-menu">
@@ -351,7 +411,7 @@
 
     <section class="products-section">
         <div class="section-header">
-            <h2>Our Products</h2>
+            <h2>Our Resources </h2>
             <p>Download and explore our beach guide resources</p>
         </div>
 
@@ -363,8 +423,11 @@
                             <i class="bi bi-file-pdf-fill"></i>
                         </div>
                         <h3>Beach Guide PDF</h3>
-                        <p>Complete guide to all 72+ beaches with detailed information and travel tips</p>
-                        <a href="queries.html" class="product-btn explore-btn">Explore More</a>
+                        <p>A complete beach guide covering 72+ beaches with detailed information.</p>
+                            <button onclick="downloadPDF()" class="beach-btn download-beach-btn">
+                                    <i class="bi bi-download"></i> Download PDF
+                                </button>
+                            
                     </div>
                 </div>
 
@@ -373,9 +436,12 @@
                         <div class="product-icon">
                             <i class="bi bi-book-fill"></i>
                         </div>
-                        <h3>Travel Brochure</h3>
-                        <p>Beautiful brochure featuring stunning beach photography and destination highlights</p>
-                        <a href="queries.html" class="product-btn explore-btn">Explore More</a>
+                        <h3>Travel Tips PDF</h3>
+                        <p>Useful travel tips to help visitors plan a smooth, safe, and enjoyable beach trip.</p>
+                            <button onclick="downloadTravel()" class="beach-btn download-beach-btn">
+                                    <i class="bi bi-download"></i> Download PDF
+                                </button>
+                            
                     </div>
                 </div>
 
@@ -384,9 +450,12 @@
                         <div class="product-icon">
                             <i class="bi bi-map-fill"></i>
                         </div>
-                        <h3>Beach Map</h3>
-                        <p>Interactive world map showing all featured beach locations across four zones</p>
-                        <a href="queries.html" class="product-btn explore-btn">Explore More</a>
+                        <h3>Safety Tips PDF</h3>
+                        <p>Essential beach safety tips to help visitors enjoy a secure and responsible coastal experience across all destinations.</p>
+                            <button onclick="downloadSafety()" class="beach-btn download-beach-btn">
+                                    <i class="bi bi-download"></i> Download PDF
+                                </button>
+                            
                     </div>
                 </div>
             </div>
@@ -453,7 +522,7 @@
                             <li><i class="bi bi-check-circle-fill"></i> Flexible booking dates</li>
                             <li><i class="bi bi-check-circle-fill"></i> Compare best prices</li>
                         </ul>
-                        <a href="queries.html" class="transport-btn">Book Flights</a>
+                        <a href="travel.html" class="transport-btn">Book Flights</a>
                     </div>
                 </div>
 
@@ -470,7 +539,7 @@
                             <li><i class="bi bi-check-circle-fill"></i> All-inclusive packages</li>
                             <li><i class="bi bi-check-circle-fill"></i> Premium amenities</li>
                         </ul>
-                        <a href="queries.html" class="transport-btn">View Cruises</a>
+                        <a href="cruise.html" class="transport-btn">View Cruises</a>
                     </div>
                 </div>
 
@@ -501,10 +570,10 @@
                     <h3 class="footer-heading">About Beautiful Beaches</h3>
                     <p class="footer-desc">Your ultimate guide to discovering 72+ world's most stunning coastal destinations across 4 global zones.</p>
                     <div class="footer-social">
-                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.facebook.com/" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        
                     </div>
                 </div>
 
@@ -590,7 +659,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Mobile menu toggle
+        
         var mobileMenuToggle = document.getElementById('mobileMenuToggle');
         var navigationMenu = document.getElementById('navigationMenu');
 
@@ -608,17 +677,36 @@
         }
 
 
-        // Download PDF function
-        function downloadPDF() {
+          function downloadPDF() {
             var link = document.createElement('a');
-            link.href = './Assets/PDF/BeautifulBeachesSRS.pdf';
-            link.download = 'BeautifulBeachesSRS.pdf';
+            link.href = './Assets/PDF/Beautifull Beaches.pdf';
+            link.download = 'BeautifulBeachesGuide.pdf';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
         }
 
-        // Newsletter form submit
+        function downloadTravel() {
+            var link = document.createElement('a');
+            link.href = './Assets/PDF/Travel Tips';
+            link.download = 'Travel Tips.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        
+
+
+                function downloadSafety() {
+            var link = document.createElement('a');
+            link.href = './Assets/PDF/Safety Guideline.pdf';
+            link.download = 'Safety Guideline.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        
         var newsletterForm = document.querySelector('.newsletter-form');
 
         if (newsletterForm) {
@@ -642,6 +730,34 @@
                 }
             };
         }
+
+
+
+                window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('adPopup').classList.add('active');
+            }, 2000);
+        });
+
+
+        function closeAdPopup() {
+            document.getElementById('adPopup').classList.remove('active');
+        }
+
+
+        document.getElementById('adPopup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeAdPopup();
+            }
+        });
+
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeAdPopup();
+            }
+        });
+
     </script>
 </body>
 </html>

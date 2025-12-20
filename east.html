@@ -385,10 +385,10 @@
                     <h3 class="footer-heading">About Beautiful Beaches</h3>
                     <p class="footer-desc">Your ultimate guide to discovering 72+ world's most stunning coastal destinations across 4 global zones.</p>
                     <div class="footer-social">
-                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.facebook.com/" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        
                     </div>
                 </div>
 
@@ -407,10 +407,10 @@
                 <div class="footer-col">
                     <h3 class="footer-heading">Explore Zones</h3>
                     <ul class="footer-links">
-                        <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone </a></li>
-                        <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone </a></li>
-                        <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone </a></li>
-                        <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone </a></li>
+                        <li><a href="north.html"><i class="bi bi-chevron-right"></i> North Zone</a></li>
+                        <li><a href="south.html"><i class="bi bi-chevron-right"></i> South Zone</a></li>
+                        <li><a href="east.html"><i class="bi bi-chevron-right"></i> East Zone</a></li>
+                        <li><a href="west.html"><i class="bi bi-chevron-right"></i> West Zone</a></li>
                         <li><a href="zone.html"><i class="bi bi-chevron-right"></i> All Zones</a></li>
                     </ul>
                 </div>
@@ -471,11 +471,9 @@
             </div>
         </div>
     </footer>
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-// Mobile menu toggle
+
 var mobileMenuToggle = document.getElementById('mobileMenuToggle');
 var navigationMenu = document.getElementById('navigationMenu');
 
@@ -492,18 +490,9 @@ if (mobileMenuToggle) {
     };
 }
 
-// Scroll header effect
-window.onscroll = function() {
-    var header = document.querySelector('.main-header');
-    
-    if (window.pageYOffset > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-};
 
-// Download PDF function
+
+
 function downloadPDF() {
     var link = document.createElement('a');
     link.href = './Assets/PDF/BeautifulBeachesSRS.pdf';
@@ -513,7 +502,7 @@ function downloadPDF() {
     document.body.removeChild(link);
 }
 
-// Newsletter form submit
+
 var newsletterForm = document.querySelector('.newsletter-form');
 
 if (newsletterForm) {
